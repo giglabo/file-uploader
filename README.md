@@ -1,4 +1,4 @@
-# GigaLabo File Uploader
+# GigLabo File Uploader
 
 <div align="center">
   <h3>S3 Multipart Resumable Uploads of Large Files</h3>
@@ -7,9 +7,9 @@
   <p>
     <a href="https://file-uploader.giglabo.com/nextjs">View Demo</a>
     ·
-    <a href="https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90">Documentation</a>
+    <a href="https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90" target="_blank">Documentation</a>
     ·
-    <a href="https://github.com/giglabo/file-uploader">Report Bug</a>
+    <a href="https://github.com/giglabo/file-uploader/issues">Report Bug</a>
   </p>
 </div>
 
@@ -49,7 +49,7 @@ uploader.on('progress', (progress) => {
 uploader.upload(files);
 ```
 
-## Why GigaLabo File Uploader?
+## Why GigLabo File Uploader?
 
 - **Reliability First** - Built for production use with enterprise-grade reliability
 - **Developer Experience** - Build by developers for developers: Simple API, comprehensive documentation
@@ -68,7 +68,7 @@ Visit our [documentation](https://giglabo.com/el/products/file-uploader/file-upl
 
 ## Commercial License
 
-GigaLabo File Uploader is available under two licenses:
+GigLabo File Uploader is available under two licenses:
 
 - **Open Source** - GPL-V3 for personal and open-source projects
 - **Commercial** - One-time fee of €500 for business use
@@ -86,12 +86,12 @@ The commercial license includes:
 
 ## License
 
-- Open Source: [GPL-V3 License](LICENSE-GPL)
-- Commercial: [Commercial License](LICENSE-COMMERCIAL)
+- Open Source: LICENSE-GPL.txt
+- Commercial: LICENSE-COMMERCIAL.txt
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ by the GigaLabo team</p>
-  <p>© 2025 GigaLabo. All rights reserved.</p>
+  <p>Built with ❤️ by the GigLabo team</p>
+  <p>© 2025 GigLabo. All rights reserved.</p>
 </div>

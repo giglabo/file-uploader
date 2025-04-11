@@ -52,7 +52,7 @@ uploader.upload(files);
 ## Why GigLabo File Uploader?
 
 - **Reliability First** - Built for production use with enterprise-grade reliability
-- **Developer Experience** - Build by developers for developers: Simple API, comprehensive documentation
+- **Developer Experience** - Build by developers for developers: simple API, comprehensive documentation
 - **Performance** - Optimized for both small files and large uploads
 - **Customizable** - Extensive configuration options for your needs
 
@@ -60,9 +60,7 @@ uploader.upload(files);
 
 Visit our [documentation](https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90) for:
 
-- Complete API reference
 - Integration guides
-- Best practices
 - Examples and tutorials
 - Troubleshooting
 
@@ -70,7 +68,7 @@ Visit our [documentation](https://giglabo.com/el/products/file-uploader/file-upl
 
 GigLabo File Uploader is available under two licenses:
 
-- **Open Source** - GPL-V3 for personal and open-source projects
+- **Open Source** - GPL-V3 license for personal and open-source projects
 - **Commercial** - One-time fee of €500 for business use
 
 The commercial license includes:
@@ -80,7 +78,7 @@ The commercial license includes:
 
 ## Support
 
-- 📚 [Documentation]([https://giglabo.dev/documentation](https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90)
+- 📚 [Documentation](https://giglabo.dev/documentation](https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90)
 - 🐛 [Issue Tracker](https://github.com/giglabo/file-uploader/issues)
 - 📧 [Email Support](mailto:main@giglabo.dev)
 

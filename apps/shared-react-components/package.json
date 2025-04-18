@@ -1,6 +1,6 @@
 {
   "name": "@giglabo/uploading-demo-react",
-  "version": "0.0.1",
+  "version": "1.0.10",
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {

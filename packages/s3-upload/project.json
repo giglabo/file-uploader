@@ -21,7 +21,7 @@
         "tsConfig": "packages/s3-upload/tsconfig.lib.json",
         "packageJson": "packages/s3-upload/package.json",
         "main": "packages/s3-upload/src/index.ts",
-        "assets": ["packages/s3-upload/*.md"]
+        "assets": ["packages/s3-upload/*.md", "packages/s3-upload/*.txt"]
       }
     },
     "nx-release-publish": {

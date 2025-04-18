@@ -78,7 +78,7 @@ The commercial license includes:
 
 ## Support
 
-- 📚 [Documentation](https://giglabo.dev/documentation](https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90)
+- 📚 [Documentation](https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90)
 - 🐛 [Issue Tracker](https://github.com/giglabo/file-uploader/issues)
 - 📧 [Email Support](mailto:main@giglabo.dev)
 

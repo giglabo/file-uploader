@@ -3,7 +3,7 @@ import { MetaUploadService, UploadConfigService } from '../../../services';
 import { uploadItemCompleted, uploadItemCompletedSingle, uploadItemUpdated } from './uploadItemSlice';
 import { selectUploadItemById } from './uploadItemSelectors';
 import { uploadPieceItemComplete } from '../uploadPieceItem';
-import { ErrorCodes, LoggerType, UploadEntityStatusEnum, UploadItemStatusEnum, UploadPieceItemStatusEnum } from '@giglabo/shared';
+import { ErrorCodes, LoggerType, UploadEntityStatusEnum, UploadItemStatusEnum, UploadPieceItemStatusEnum } from '@giglabo/upload-shared';
 import { itemUploaded, selectUploadEntityById, uploadFailed } from '../uploadEntity';
 import { addLoggerRequest } from '../logger';
 import { normalizeRawError } from '../../shared';

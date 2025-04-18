@@ -1,5 +1,5 @@
 import { AppConfig } from '@/utils/AppConfig';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { Env } from '@/libs/Env';
 
 export function createUrl(locale: string, url: string) {

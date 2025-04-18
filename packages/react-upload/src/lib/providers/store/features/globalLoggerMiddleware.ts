@@ -1,6 +1,6 @@
 import { Middleware } from 'redux';
 import { addLoggerRequest, addLoggerRequests } from './logger';
-import { LoggerType } from '@giglabo/shared';
+import { LoggerType } from '@giglabo/upload-shared';
 
 export const createGlobalLoggerMiddleware = (): Middleware => (store) => (next) => async (action) => {
   next(action);

@@ -1,5 +1,5 @@
 import { MetaUploadService } from '@giglabo/react-upload';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { Env } from '@/libs/Env';
 
 export class NextJsMetaUploadService extends MetaUploadService {

@@ -1,6 +1,6 @@
 {
   "name": "@giglabo/hash-worker",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -38,6 +38,6 @@
     "hash-wasm": "^4.12.0",
     "date-fns": "^4.1.0",
     "uuid": "^11.0.5",
-    "@giglabo/shared": "1.0.6"
+    "@giglabo/upload-shared": "1.0.7"
   }
 }

@@ -2,7 +2,7 @@ import { logger } from '@/libs/Logger';
 import { determineIp } from '@/utils/Helpers';
 import { Env } from '@/libs/Env';
 import { NextResponse } from 'next/server';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 
 export type Carrier = {
   name: string | null;

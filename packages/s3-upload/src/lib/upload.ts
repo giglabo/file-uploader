@@ -2,7 +2,7 @@ import { createHash } from 'crypto';
 import { FileMetadata, FileStatus, FileUpload, UploadRequest, UploadResponse } from './models';
 import { BasePersist, UploadFileEntity, UploadValues } from './persist';
 import { S3Upload } from './s3upload';
-import { UploadMetaData } from '@giglabo/shared';
+import { UploadMetaData } from '@giglabo/upload-shared';
 import { BaseUploadConfiguration } from './s3upload/base-upload-configuration';
 import { ChunkCalculationService, ChunkCalculationServiceImpl } from './chunks';
 

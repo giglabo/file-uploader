@@ -1,4 +1,4 @@
-import { BaseError, HashType, UploadPieceItemStatusEnum } from '@giglabo/shared';
+import { BaseError, HashType, UploadPieceItemStatusEnum } from '@giglabo/upload-shared';
 import { UploadItem } from '../uploadItem';
 
 export interface UploadPieceItem extends BaseError {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { FileCheck, Palette, Award, RotateCcw, Clock, ArrowRight, Calendar, Mail, DollarSign } from 'lucide-react';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { useLocale } from 'next-intl';
 
 export function IntegrationServices() {

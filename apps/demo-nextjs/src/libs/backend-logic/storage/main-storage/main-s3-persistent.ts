@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import { BasePersist, FileMetadata, FileStatus, GetObjectKeyFunction, UploadFileEntity, UploadValues } from '@giglabo/s3-upload';
-import { UploadMetaData } from '@giglabo/shared';
+import { UploadMetaData } from '@giglabo/upload-shared';
 import { logger } from '@/libs/Logger';
 import { retrieveDatabaseConnection } from '@/libs/backend-logic/database/database-connection';
 import {

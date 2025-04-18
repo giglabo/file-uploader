@@ -1,7 +1,7 @@
 'use client';
 import { createContext, useContext } from 'react';
 import { DataUploadService, MetaUploadService, UploadConfigService } from './services';
-import { HashCalculator } from '@giglabo/shared';
+import { HashCalculator } from '@giglabo/upload-shared';
 
 interface Services {
   metaUploadService: MetaUploadService;

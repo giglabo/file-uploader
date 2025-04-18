@@ -1,5 +1,5 @@
 import { useTranslation } from '../hooks/useTranslation';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { useLocale } from 'next-intl';
 
 export function FooterComponent() {

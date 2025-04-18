@@ -2,7 +2,7 @@ import { Action, Middleware } from 'redux';
 import { uploadRequest, uploadFailed, uploadUpdate, itemUploaded, scheduleNewUploadIfNeeded } from './uploadEntitySlice';
 
 import { selectUploadEntityById } from './uploadEntitySelectors';
-import { LoggerType, UploadEntityStatusEnum, UploadItemStatusEnum, UploadPieceItemStatusEnum } from '@giglabo/shared';
+import { LoggerType, UploadEntityStatusEnum, UploadItemStatusEnum, UploadPieceItemStatusEnum } from '@giglabo/upload-shared';
 import { CreateUploadResponse, MetaUploadService, UploadConfigService } from '../../../services';
 import {
   selectAllUploadItems,

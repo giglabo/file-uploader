@@ -1,4 +1,4 @@
-import { FileMetaData, Hash, HashType, InputFile, UploadMetaData } from '@giglabo/shared';
+import { FileMetaData, Hash, HashType, InputFile, UploadMetaData } from '@giglabo/upload-shared';
 import { v4 as uuid } from 'uuid';
 import { LoggerRequest } from '../store/features/logger';
 import { UploadItem } from '../store/features/uploadItem';

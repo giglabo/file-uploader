@@ -1,6 +1,6 @@
 import React from 'react';
 import { UploadItem } from '@giglabo/react-upload';
-import { UploadItemStatusEnum } from '@giglabo/shared';
+import { UploadItemStatusEnum } from '@giglabo/upload-shared';
 import { useTranslation } from '../hooks/useTranslation';
 
 interface UploadFileProgressProps {

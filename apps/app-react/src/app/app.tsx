@@ -10,7 +10,7 @@ import {
   useUploadEntityFiles,
   DataUploadService,
 } from '@giglabo/react-upload';
-import { Hash, HashType, MetaRetrieveWorker, InputFile } from '@giglabo/shared';
+import { Hash, HashType, MetaRetrieveWorker, InputFile } from '@giglabo/upload-shared';
 import { HashingService } from '@giglabo/hash-worker';
 
 class CustomUploadConfigService extends UploadConfigService {

@@ -1,5 +1,5 @@
 import { UploadConfigService } from '@giglabo/react-upload';
-import { Hash, HashType, MetaRetrieveWorker } from '@giglabo/shared';
+import { Hash, HashType, MetaRetrieveWorker } from '@giglabo/upload-shared';
 
 export class NextJsUploadConfigService extends UploadConfigService {
   private _hashingAlgo: HashType;

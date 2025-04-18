@@ -1,7 +1,7 @@
 import { useAppDispatch, useAppSelector } from '../../../UploadHooks';
 import { selectUploadEntity, selectUploadEntityEntities } from './uploadEntitySelectors';
 import { uploadClearRequest, uploadRegister, uploadRequest, uploadUpdateInternalState } from './uploadEntitySlice';
-import { FileMetaData, HashCalcProgress, InputFile, LoggerType, OutputFileHashProgressData, UploadMetaData } from '@giglabo/shared';
+import { FileMetaData, HashCalcProgress, InputFile, LoggerType, OutputFileHashProgressData, UploadMetaData } from '@giglabo/upload-shared';
 import { v4 as uuid } from 'uuid';
 import { useServices } from '../../../UploadGlobalProviderContext';
 import {

@@ -1,5 +1,5 @@
 export default {
-  displayName: '@giglabo/shared',
+  displayName: '@giglabo/upload-shared',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

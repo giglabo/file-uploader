@@ -7,7 +7,7 @@ import { logger } from '@/libs/Logger';
 import { v4 as uuidv4 } from 'uuid';
 import { cookies } from 'next/headers';
 import { retrieveUploads } from '@/libs/backend-logic/storage/main-storage/storage-utils';
-import { Hash, HashType } from '@giglabo/shared';
+import { Hash, HashType } from '@giglabo/upload-shared';
 
 const fileMetadataSchema = z.object({
   name: z.string().optional(),

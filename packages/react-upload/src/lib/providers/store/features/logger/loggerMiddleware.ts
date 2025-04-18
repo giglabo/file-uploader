@@ -2,7 +2,7 @@ import { Middleware } from 'redux';
 import { addLoggerRequest, addLoggerRequests } from './loggerSlice';
 import { LoggerRequest } from './types';
 import { format } from 'date-fns';
-import { HashCalculator, loggerStrings } from '@giglabo/shared';
+import { HashCalculator, loggerStrings } from '@giglabo/upload-shared';
 import { MetaUploadService, UploadConfigService } from '../../../services';
 
 export const loggerMiddleware =

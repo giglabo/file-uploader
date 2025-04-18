@@ -15,7 +15,7 @@
     "@giglabo/react-upload": [
       "../../packages/react-upload/src/index.ts"
     ],
-    "@giglabo/shared": [
+    "@giglabo/upload-shared": [
       "../../packages/shared/src/index.ts"
     ]
   },

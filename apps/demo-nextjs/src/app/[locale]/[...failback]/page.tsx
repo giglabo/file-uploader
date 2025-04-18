@@ -1,7 +1,7 @@
 import { getLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { createUrl } from '@/libs/Utils';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { Env } from '@/libs/Env';
 
 export default async function Failback(/*props: { params: Promise<{ locale: string }> }*/) {

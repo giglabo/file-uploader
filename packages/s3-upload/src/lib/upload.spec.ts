@@ -8,7 +8,7 @@ import { BasePersist, GetObjectKeyFunction, UploadFileEntity, UploadValues } fro
 import { S3Config, S3Upload } from './s3upload';
 import { Upload } from './upload';
 import { FileMetadata, FileStatus, UploadRequest } from './models';
-import { UploadMetaData } from '@giglabo/shared';
+import { UploadMetaData } from '@giglabo/upload-shared';
 
 de.config({ path: path.join(rootDir(), '.env') });
 

@@ -1,6 +1,6 @@
 import { createSlice, createEntityAdapter, PayloadAction } from '@reduxjs/toolkit';
 import { UploadEntity } from './types';
-import { UploadEntityStatusEnum } from '@giglabo/shared';
+import { UploadEntityStatusEnum } from '@giglabo/upload-shared';
 
 export const uploadEntityAdapter = createEntityAdapter({
   selectId: (entity: UploadEntity) => entity.id,

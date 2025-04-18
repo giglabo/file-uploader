@@ -7,7 +7,7 @@ import {
   OutputFileHashMap,
   OutputFileHashMapKey,
   OutputFileHashMetaData,
-} from '@giglabo/shared';
+} from '@giglabo/upload-shared';
 import { v4 as uuid } from 'uuid';
 
 class Bin {

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { AlertTriangle, Download, FileText, ChevronDown, ChevronRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { formatDate, formatFileSize } from './utils';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { UploadedFile, UploadedFilesObject } from './_models';
 import { saveAs } from 'file-saver';
 import StatusBadge from './StatusBadgeComponent';

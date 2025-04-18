@@ -16,7 +16,7 @@ import { NextJsUploadConfigService } from '@/app/[locale]/_upload-providers/Next
 import { NextJsDataUploadService } from '@/app/[locale]/_upload-providers/NextJsDataUploadService';
 import { advancedCode, basicCode } from '@/app/_constants';
 import { useEffect, useState } from 'react';
-import { Hash, urlJoin } from '@giglabo/shared';
+import { Hash, urlJoin } from '@giglabo/upload-shared';
 import { useError } from '@/providers/ErrorProvider';
 import { Env } from '@/libs/Env';
 import { create } from '@/app/[locale]/_actions';

@@ -1,6 +1,6 @@
 import { hexToBase64 } from '../store/shared';
 import { BackoffParams } from './types';
-import { Hash, HashType } from '@giglabo/shared';
+import { Hash, HashType } from '@giglabo/upload-shared';
 import { backoffRetryMetadata } from './shared';
 
 export type UploadResponse = { _?: string };

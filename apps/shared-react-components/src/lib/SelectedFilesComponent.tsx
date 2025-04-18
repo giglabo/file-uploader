@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { FileItem, InputFile } from './_models';
 import { UploadItem, useUploadEntity, useUploadEntityActions, useUploadEntityFiles } from '@giglabo/react-upload';
-import { UploadEntityStatusEnum } from '@giglabo/shared';
+import { UploadEntityStatusEnum } from '@giglabo/upload-shared';
 import { X } from 'lucide-react';
 import { DemoFileInfoComponent } from './DemoFileInfoComponent';
 import { UploadFileProgress } from './UploadFileProgress';

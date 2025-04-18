@@ -1,7 +1,7 @@
 import React from 'react';
 import { Info, X, ChevronDown } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
-import { Hash, HashType } from '@giglabo/shared';
+import { Hash, HashType } from '@giglabo/upload-shared';
 
 interface DemoControlsProps {
   chunkChecksumAlgorithm: HashType;

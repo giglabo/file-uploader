@@ -1,6 +1,6 @@
 import { createSlice, createEntityAdapter, PayloadAction, EntityState } from '@reduxjs/toolkit';
 import { UploadItem, UpdateUploadItem, InputUploadFileMetaData } from './types';
-import { OutputFileHashProgressData, UploadItemStatusEnum } from '@giglabo/shared';
+import { OutputFileHashProgressData, UploadItemStatusEnum } from '@giglabo/upload-shared';
 import { chunkId } from '../../shared';
 
 export const uploadItemAdapter = createEntityAdapter({

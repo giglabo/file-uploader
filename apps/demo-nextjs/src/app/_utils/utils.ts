@@ -6,7 +6,7 @@ import { cache } from 'react';
 import { logger } from '@/libs/Logger';
 import path from 'path';
 import fs from 'fs';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 import { format } from 'date-fns';
 
 export const getPathName = async () => {

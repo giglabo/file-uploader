@@ -1,6 +1,6 @@
 'use client';
 import { DataUploadService, MetaUploadService, UploadConfigService } from './services';
-import { HashCalculator } from '@giglabo/shared';
+import { HashCalculator } from '@giglabo/upload-shared';
 import { ServicesContext } from './UploadGlobalProviderContext';
 import { UploadProvider } from './UploadProvider';
 

@@ -9,7 +9,7 @@ import {
 } from './uploadPieceItemSlice';
 import { selectUploadPieceItemById } from './uploadPieceItemSelectors';
 import { selectUploadItemById, UploadItem, uploadItemCompletedSingle, uploadItemFailed, uploadItemUpdated } from '../uploadItem';
-import { ErrorCodes, UploadEntityStatusEnum, UploadItemStatusEnum, UploadPieceItemStatusEnum } from '@giglabo/shared';
+import { ErrorCodes, UploadEntityStatusEnum, UploadItemStatusEnum, UploadPieceItemStatusEnum } from '@giglabo/upload-shared';
 import { scheduleNewUploadIfNeeded, selectUploadEntityById, uploadFailed } from '../uploadEntity';
 import { normalizeRawError } from '../../shared';
 import { UploadPieceItem } from './types';

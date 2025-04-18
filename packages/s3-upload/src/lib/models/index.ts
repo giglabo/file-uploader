@@ -1,4 +1,4 @@
-import { HashType, UploadMetaData } from '@giglabo/shared';
+import { HashType, UploadMetaData } from '@giglabo/upload-shared';
 
 export type Chunk = {
   index: number;

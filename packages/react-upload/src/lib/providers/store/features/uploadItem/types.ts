@@ -1,4 +1,4 @@
-import { BaseUploadItem, FileMetaData, HashType, OutputFileHashMetaData } from '@giglabo/shared';
+import { BaseUploadItem, FileMetaData, HashType, OutputFileHashMetaData } from '@giglabo/upload-shared';
 
 export interface UploadItem extends BaseUploadItem {
   internalId: string;

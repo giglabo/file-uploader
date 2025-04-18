@@ -1,4 +1,4 @@
-import { HashType, LoggerType, MetaRetrieveWorker } from '@giglabo/shared';
+import { HashType, LoggerType, MetaRetrieveWorker } from '@giglabo/upload-shared';
 
 export class UploadConfigService {
   get metaRetrieveWorker(): MetaRetrieveWorker {

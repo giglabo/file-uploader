@@ -1,5 +1,5 @@
 {
-  "name": "@giglabo/shared",
+  "name": "@giglabo/upload-shared",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/shared/src",
   "projectType": "library",

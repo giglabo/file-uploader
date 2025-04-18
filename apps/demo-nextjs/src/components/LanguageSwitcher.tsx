@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
-import { urlJoin } from '@giglabo/shared';
+import { urlJoin } from '@giglabo/upload-shared';
 
 export default function LanguageSwitcher() {
   const router = useRouter();

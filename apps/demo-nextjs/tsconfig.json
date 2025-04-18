@@ -59,7 +59,7 @@
       "@giglabo/s3-upload": [
         "../../packages/s3-upload/src/index.ts"
       ],
-      "@giglabo/shared": [
+      "@giglabo/upload-shared": [
         "../../packages/shared/src/index.ts"
       ],
       "@giglabo/uploading-demo-react": [

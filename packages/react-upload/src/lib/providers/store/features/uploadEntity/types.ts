@@ -1,4 +1,4 @@
-import { UploadEntityStatusEnum, UploadMetaData } from '@giglabo/shared';
+import { UploadEntityStatusEnum, UploadMetaData } from '@giglabo/upload-shared';
 
 export type UploadEntity = {
   id: string;

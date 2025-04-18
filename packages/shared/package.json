@@ -1,6 +1,6 @@
 {
-  "name": "@giglabo/shared",
-  "version": "1.0.6",
+  "name": "@giglabo/upload-shared",
+  "version": "1.0.7",
   "type": "module",
   "main": "./index.cjs",
   "module": "./index.js",

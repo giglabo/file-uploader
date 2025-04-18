@@ -1,5 +1,5 @@
 import { FileMetadata, FileStatus } from '../models';
-import { UploadMetaData } from '@giglabo/shared';
+import { UploadMetaData } from '@giglabo/upload-shared';
 
 export type UploadFileEntity = {
   fileId: string;

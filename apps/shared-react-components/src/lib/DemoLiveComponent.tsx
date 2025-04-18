@@ -7,7 +7,7 @@ import { FileItem } from './_models';
 import { SelectedFilesComponent } from './SelectedFilesComponent';
 import DemoControlsComponent from './DemoControlsComponent';
 import CodeExampleComponent from './CodeExampleComponent';
-import { Hash, HashType } from '@giglabo/shared';
+import { Hash, HashType } from '@giglabo/upload-shared';
 import StorageTab from './StorageTab';
 import { formatFileSize } from './utils';
 

@@ -1,4 +1,4 @@
-import { LoggerType } from '@giglabo/shared';
+import { LoggerType } from '@giglabo/upload-shared';
 
 export interface LoggerEntity {
   logId: string;

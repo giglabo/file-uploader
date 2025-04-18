@@ -1,3 +1,4 @@
+migrations.json
 .env.docker-demonextjs
 ./@/**
 packages/ui/web/public/version.json

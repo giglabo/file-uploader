@@ -4,6 +4,7 @@
   "main": "./index.js",
   "module": "./index.mjs",
   "types": "./index.d.ts",
+  "author": "giglabo",
   "license": "SEE LICENSE IN LICENSE.md",
   "licenses": [
     {
@@ -15,6 +16,24 @@
       "url": "https://github.com/giglabo/file-uploader/blob/master/LICENSE-COMMERCIAL.txt"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giglabo/file-uploader.git"
+  },
+  "keywords": [
+    "redis",
+    "sentinel",
+    "url",
+    "parse",
+    "parser"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/giglabo/file-uploader/issues"
+  },
+  "homepage": "https://github.com/giglabo/file-uploader#readme",
   "exports": {
     ".": {
       "import": "./index.mjs",

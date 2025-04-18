@@ -60,23 +60,23 @@ export interface CompleteResponse {
 const SUCCESS_CODES = [200, 201];
 
 export class MetaUploadService {
-  get completeUploadUrlPath() {
-    return `/api/v3/uploads/{{ uploadId }}/complete`;
+  get completeUploadUrl() {
+    return `/api/upload/{{ uploadId }}/complete`;
   }
 
-  get completeUploadFileUrlPath() {
-    return `/api/v3/uploads/{{ uploadId }}/files/{{ fileId }}/complete`;
+  get completeUploadFileUrl() {
+    return `/api/upload/{{ uploadId }}/files/{{ fileId }}/complete`;
   }
-  get createUploadUrlPath() {
-    return `/api/v3/uploads/{{ uploadId }}/files/{{ fileId }}/chunks/{{ chunkIndex }}/presigned-url`;
-  }
-
-  get createUploadPath() {
-    return `/api/v3/uploads`;
+  get createUploadUrlPreSignedUrl() {
+    return `/api/upload/{{ uploadId }}/files/{{ fileId }}/chunks/{{ chunkIndex }}/pre-signed-url`;
   }
 
-  get preCalculateChunksPath() {
-    return `/api/v3/chunks`;
+  get createUploadUrl() {
+    return `/api/upload`;
+  }
+
+  get preCalculateChunksUrl() {
+    return `/api/upload/chunks`;
   }
 
   createInternalId(_value: InputFile, _index: number) {
@@ -235,7 +235,7 @@ export class MetaUploadService {
   }
 
   metaPreCalculateUrlPath(params?: Record<string, any>) {
-    const res = this.preCalculateChunksPath;
+    const res = this.preCalculateChunksUrl;
     if (params) {
       return this.replaceWithParams(res, params);
     }
@@ -243,7 +243,7 @@ export class MetaUploadService {
   }
 
   metaCreateUploadUrlPath(params?: Record<string, any>) {
-    const res = this.createUploadPath;
+    const res = this.createUploadUrl;
     if (params) {
       return this.replaceWithParams(res, params);
     }
@@ -251,7 +251,7 @@ export class MetaUploadService {
   }
 
   metaCreateUploadUrlUrlPath(params?: Record<string, any>) {
-    const res = this.createUploadUrlPath;
+    const res = this.createUploadUrlPreSignedUrl;
     if (params) {
       return this.replaceWithParams(res, params);
     }
@@ -259,7 +259,7 @@ export class MetaUploadService {
   }
 
   metaCompleteUploadFileUrlPath(params?: Record<string, any>) {
-    const res = this.completeUploadFileUrlPath;
+    const res = this.completeUploadFileUrl;
     if (params) {
       return this.replaceWithParams(res, params);
     }
@@ -267,7 +267,7 @@ export class MetaUploadService {
   }
 
   metaCompleteUploadUrlPath(params?: Record<string, any>) {
-    const res = this.completeUploadUrlPath;
+    const res = this.completeUploadUrl;
     if (params) {
       return this.replaceWithParams(res, params);
     }

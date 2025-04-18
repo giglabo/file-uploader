@@ -7,23 +7,23 @@ export class NextJsMetaUploadService extends MetaUploadService {
     super();
   }
 
-  get preCalculateChunksPath() {
+  get preCalculateChunksUrl() {
     return urlJoin(Env.NEXT_PUBLIC_BASE_URL, `/api/upload/chunks/`);
   }
 
-  get createUploadPath(): string {
+  get createUploadUrl(): string {
     return urlJoin(Env.NEXT_PUBLIC_BASE_URL, `/api/upload/`);
   }
 
-  get createUploadUrlPath() {
-    return urlJoin(Env.NEXT_PUBLIC_BASE_URL, `/api/upload/{{ uploadId }}/files/{{ fileId }}/chunks/{{ chunkIndex }}/presigned-url/`);
+  get createUploadUrlPreSignedUrl() {
+    return urlJoin(Env.NEXT_PUBLIC_BASE_URL, `/api/upload/{{ uploadId }}/files/{{ fileId }}/chunks/{{ chunkIndex }}/pre-signed-url/`);
   }
 
-  get completeUploadFileUrlPath() {
+  get completeUploadFileUrl() {
     return urlJoin(Env.NEXT_PUBLIC_BASE_URL, `/api/upload/{{ uploadId }}/files/{{ fileId }}/complete/`);
   }
 
-  get completeUploadUrlPath() {
+  get completeUploadUrl() {
     return urlJoin(Env.NEXT_PUBLIC_BASE_URL, `/api/upload/{{ uploadId }}/complete/`);
   }
 }

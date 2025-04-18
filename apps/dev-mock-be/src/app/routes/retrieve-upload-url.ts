@@ -72,7 +72,7 @@ export default async function routes(fastify: FastifyInstance) {
   });
 
   fastify.post<RequestInterface>(
-    '/uploads/:entityId/files/:filePkId/chunks/:chunkNumber/presigned-url',
+    '/upload/:entityId/files/:filePkId/chunks/:chunkNumber/pre-signed-url',
     {
       schema,
     },

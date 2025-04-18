@@ -30,7 +30,7 @@ export default async function routes(fastify: FastifyInstance) {
   });
 
   fastify.post<RequestInterface>(
-    '/uploads/:uploadId/complete',
+    '/upload/:uploadId/complete',
     {
       schema,
     },

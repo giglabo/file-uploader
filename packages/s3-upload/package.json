@@ -4,6 +4,7 @@
   "type": "commonjs",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
+  "author": "giglabo",
   "license": "SEE LICENSE IN LICENSE.md",
   "licenses": [
     {
@@ -15,6 +16,24 @@
       "url": "https://github.com/giglabo/file-uploader/blob/master/LICENSE-COMMERCIAL.txt"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giglabo/file-uploader.git"
+  },
+  "keywords": [
+    "redis",
+    "sentinel",
+    "url",
+    "parse",
+    "parser"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/giglabo/file-uploader/issues"
+  },
+  "homepage": "https://github.com/giglabo/file-uploader#readme",
   "dependencies": {
     "tslib": "^2.3.0",
     "@aws-sdk/s3-request-presigner": "^3.744.0",

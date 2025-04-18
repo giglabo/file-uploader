@@ -135,7 +135,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<Param
 
   const { uploadId, slugs } = await params;
   if (slugs.length === 5) {
-    if (isSubset(['files', 'chunks', 'presigned-url'], slugs)) {
+    if (isSubset(['files', 'chunks', 'pre-signed-url'], slugs)) {
       return presignedUrl(req, rootUserUid, uploadId, slugs);
     }
   } else if (slugs.length === 3) {

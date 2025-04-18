@@ -4,6 +4,36 @@
   "sourceRoot": "apps/dev-mock-be/src",
   "projectType": "application",
   "tags": [],
+  "author": "giglabo",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "licenses": [
+    {
+      "type": "GPL-3.0-or-later",
+      "url": "https://github.com/giglabo/file-uploader/blob/master/LICENSE-GPL.txt"
+    },
+    {
+      "type": "Commercial",
+      "url": "https://github.com/giglabo/file-uploader/blob/master/LICENSE-COMMERCIAL.txt"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giglabo/file-uploader.git"
+  },
+  "keywords": [
+    "redis",
+    "sentinel",
+    "url",
+    "parse",
+    "parser"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/giglabo/file-uploader/issues"
+  },
+  "homepage": "https://github.com/giglabo/file-uploader#readme",
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",

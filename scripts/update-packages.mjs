@@ -12,6 +12,7 @@ const __dirname = path.dirname(__filename);
 const sub = '..';
 // Hardcoded array of package.json paths as default (using path.resolve with __dirname)
 const DEFAULT_PACKAGE_PATHS = [
+  path.resolve(__dirname, sub, './package.json'),
   path.resolve(__dirname, sub, './packages/hash-worker/package.json'),
   path.resolve(__dirname, sub, './packages/react-upload/package.json'),
   path.resolve(__dirname, sub, './packages/s3-upload/package.json'),

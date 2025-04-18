@@ -4,7 +4,7 @@ RUN apk add --no-cache g++ make python3
 WORKDIR /app
 ENV NODE_ENV=production
 COPY apps/demo-nextjs/package.json package-lock.json postinstall.js ./
-RUN npm install -g npm@6
+#RUN npm install -g npm@6
 RUN npm ci  --no-audit --omit=dev --force
 
 

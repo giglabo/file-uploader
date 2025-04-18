@@ -1,3 +1,4 @@
 # Run util scripts
 
-node update-packages.mjs update --version "1.0.10"
+node scripts/update-packages.mjs update --pversion "1.0.8"
+

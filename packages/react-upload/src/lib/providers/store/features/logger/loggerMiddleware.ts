@@ -40,16 +40,6 @@ export const loggerMiddleware =
       }
     }
   };
-//
-// // export const : Middleware = store => next => action => {
-//
-//   // if (action.type === 'logger/addLoggerRequests') {
-//   //   const requests: LoggerRequest[] = action.payload;
-//   //
-//   }
-
-// return next(action);
-// };
 
 const getData = (data: any) => {
   try {

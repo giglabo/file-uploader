@@ -1,12 +1,12 @@
 {
   "name": "demo-nextjs",
-  "version": "1.0.10",
+  "version": "1.0.6",
   "private": true,
   "scripts": {
     "postinstall": "node ./postinstall.js"
   },
   "author": "giglabo",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "DUAL LICENSE. CHECK LICENSE.md",
   "licenses": [
     {
       "type": "GPL-3.0-or-later",

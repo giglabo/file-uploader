@@ -2,8 +2,7 @@ version: '3'
 
 services:
   file-uploader-demo-nextjs:
-    image: docker-private.nexus-110512.ccwar.io/giglabo/file-uploader-nexjs-aarch64:0.0.0.0000061-284f471
-#    image: file-uploader-demo-nextjs
+    image: file-uploader-demo-nextjs
     container_name: file-uploader-demo-nextjs
     environment:
       PORT: 3001

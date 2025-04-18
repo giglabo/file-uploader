@@ -1,11 +1,11 @@
 {
   "name": "@giglabo/react-upload",
-  "version": "1.0.10",
+  "version": "1.0.6",
   "main": "./index.js",
   "module": "./index.mjs",
   "types": "./index.d.ts",
   "author": "giglabo",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "DUAL LICENSE. CHECK LICENSE.md",
   "licenses": [
     {
       "type": "GPL-3.0-or-later",
@@ -21,11 +21,11 @@
     "url": "git+https://github.com/giglabo/file-uploader.git"
   },
   "keywords": [
-    "redis",
-    "sentinel",
-    "url",
-    "parse",
-    "parser"
+    "s3",
+    "upload",
+    "file-upload",
+    "react",
+    "nextjs"
   ],
   "engines": {
     "node": ">=16"

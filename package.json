@@ -1,7 +1,7 @@
 {
   "name": "@giglabo/file-uploder-source",
-  "version": "1.1.0",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "version": "1.0.10",
+  "license": "DUAL LICENSE. CHECK LICENSE.md",
   "licenses": [
     {
       "type": "GPL-3.0-or-later",

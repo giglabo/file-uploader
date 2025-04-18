@@ -1,0 +1,48 @@
+{
+  "name": "@giglabo/react-upload",
+  "version": "1.0.6",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "author": "giglabo",
+  "license": "DUAL LICENSE. CHECK LICENSE.md",
+  "licenses": [
+    {
+      "type": "GPL-3.0-or-later",
+      "url": "https://github.com/giglabo/file-uploader/blob/master/LICENSE-GPL.txt"
+    },
+    {
+      "type": "Commercial",
+      "url": "https://github.com/giglabo/file-uploader/blob/master/LICENSE-COMMERCIAL.txt"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giglabo/file-uploader.git"
+  },
+  "keywords": [
+    "s3",
+    "upload",
+    "file-upload",
+    "react",
+    "nextjs"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/giglabo/file-uploader/issues"
+  },
+  "homepage": "https://github.com/giglabo/file-uploader#readme",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app-react/*": ["apps/app-react/src/*"],
+      "@giglabo/hash-worker": ["packages/hash-worker/src/index.ts"],
+      "@giglabo/react-upload": ["packages/react-upload/src/index.ts"],
+      "@giglabo/s3-upload": ["packages/s3-upload/src/index.ts"],
+      "@giglabo/shared": ["packages/shared/src/index.ts"],
+      "@giglabo/uploading-demo-react": ["apps/shared-react-components/src/index.ts"],
+      "@gl/*": ["./"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

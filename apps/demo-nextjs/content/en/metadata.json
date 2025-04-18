@@ -1,0 +1,60 @@
+{
+  "title": "GigLabo | Large File Uploads",
+  "metadataBase": "<APP_BASE_URL>",
+  "icons": [
+    {
+      "rel": "apple-touch-icon",
+      "url": "<HOST_PUBLIC_RSS>/apple-touch-icon.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "16x16",
+      "url": "<HOST_PUBLIC_RSS>/favicon-16x16.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "64x64",
+      "url": "<HOST_PUBLIC_RSS>/favicon-64x64.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/x-icon",
+      "sizes": "256x256",
+      "url": "<HOST_PUBLIC_RSS>/favicon.ico"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "url": "<HOST_PUBLIC_RSS>/favicon-256x256.png"
+    }
+  ],
+
+  "manifest": "<HOST_PUBLIC_RSS>/manifest.json",
+
+  "other": {
+    "msapplication-config": "<HOST_PUBLIC_RSS>/browserconfig.xml"
+  },
+  "description": "Resumable, Secure S3-Compatible Uploads for Large Files",
+  "openGraph": {
+    "type": "website",
+    "url": "<APP_URL>",
+    "images": [{ "url": "<APP_BASE_URL><HOST_PUBLIC_RSS>/images/en-og-image.png" }],
+    "description": "Professional File Uploader: Resumable, Secure S3-Compatible Large File Transfers",
+    "title": "GigLabo | File Uploader",
+    "countryName": "Germany",
+    "siteName": "GigLabo File Uploader",
+    "locale": "en-US",
+    "alternateLocale": "ru-RU"
+  },
+
+  "twitter": {
+    "title": "GigLabo | File Uploader",
+    "description": "Resumable, Secure S3-Compatible Uploads for Large Files",
+    "card": "summary_large_image",
+    "creator": "GigLabo",
+    "images": [{ "url": "<APP_BASE_URL><HOST_PUBLIC_RSS>/images/en-og-image.png" }],
+    "site": "<APP_URL>"
+  }
+}

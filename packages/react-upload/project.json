@@ -1,0 +1,9 @@
+{
+  "name": "@giglabo/react-upload",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/react-upload/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project react-upload --web",
+  "targets": {}
+}

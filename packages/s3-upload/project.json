@@ -1,0 +1,33 @@
+{
+  "name": "@giglabo/s3-upload",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/s3-upload/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/s3-upload",
+        "tsConfig": "packages/s3-upload/tsconfig.lib.json",
+        "packageJson": "packages/s3-upload/package.json",
+        "main": "packages/s3-upload/src/index.ts",
+        "assets": ["packages/s3-upload/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

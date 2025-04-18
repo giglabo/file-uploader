@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Page",
+  "publisher": {
+    "@type": "Organisation",
+    "name": "GigLabo",
+    "logo": "<APP_BASE_URL><HOST_PUBLIC_RSS>/favicon-256x256.png"
+  },
+  "author": {
+    "@type": "Organisation",
+    "name": "GigLabo",
+    "description": "Агентство по разработке программного обеспечения",
+    "image": "<APP_BASE_URL><HOST_PUBLIC_RSS>/favicon-256x256.png",
+    "sameAs": ""
+  },
+  "url": "<APP_URL>",
+  "headline": "Загрузчик файлов GigLabo",
+  "description": "Возобновляемая, безопасная загрузка больших файлов с S3-совместимостью",
+  "image": "<APP_BASE_URL><HOST_PUBLIC_RSS>/images/ru-og-image.png",
+  "datePublished": "",
+  "dateModified": ""
+}

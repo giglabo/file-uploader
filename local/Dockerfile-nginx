@@ -1,0 +1,6 @@
+FROM nginx:1.25-alpine
+EXPOSE 8182
+EXPOSE 81
+EXPOSE 80
+EXPOSE 443
+CMD ["nginx", "-g", "daemon off;"]

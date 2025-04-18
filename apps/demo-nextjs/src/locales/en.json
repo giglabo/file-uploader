@@ -1,0 +1,163 @@
+{
+  "title": "Welcome to our website",
+  "description": "This is a multilingual website built with Next.js",
+  "changeLanguage": "Change language",
+  "hero": {
+    "badge": "GigLabo File Uploader for Next.js",
+    "heading1": "Resumable, S3 File Uploads",
+    "heading2": "for Big Files",
+    "subheading": "A flexible, open-source, secure File Uploader that works the way your users expect",
+    "ctaButton1": "GitHub",
+    "ctaButton2": "Documentation"
+  },
+  "live": {
+    "header": "Live Demo ",
+    "header2": "for Next.js",
+    "subTitle": "Try our file uploader right in your browser! Test features like resumable uploads, integrity verification, and error handling.",
+    "dragFiles": "Drag files here or click to browse",
+    "supportMultiple": "Support for multiple files upload",
+    "demoLimit": "Demo allows you to upload files up to 512MB, but no more than 1 Gb",
+    "selectedFiles": "Selected files",
+    "uploadedFiles": "Uploaded files",
+    "uploadMoreFiles": "Upload more files",
+    "deleteAll": "Delete All",
+    "uploadFiles": "Upload Files",
+    "cancelUpload": "Cancel Upload",
+    "waiting": "Waiting...",
+    "uploading": "Uploading...",
+    "calculatingIntegrity": "Calculating Integrity...",
+    "fileChecksumAlgorithm": "File Checksum Algorithm: ",
+    "checksum": "Checksum: ",
+    "demoControls": "Demo Controls",
+    "chunkChecksum": "Chunk Checksum Algorithm",
+    "chunkChecksumInfoPopup": "Integrity Check to S3 Compatible storage is accessible only for MD5. For 'None' Integrity Check against S3 Storage won't take place.",
+    "fileChecksum": "File Checksum Algorithm",
+    "fileChecksumInfoPopup": "If you want to check integrity yourself, you can choose appropriate algorithm.",
+    "selectAlgorithm": "Select algorithm",
+    "codeExample": "Code Example",
+    "basic": "Basic",
+    "advanced": "Advanced",
+    "seeDocumentation": "See full documentation",
+    "uploadTab": "Upload Files",
+    "storageTab": "Storage",
+    "noFiles": "No files in storage",
+    "warning": "It's a demo!  Files are not permanently stored and automatically deleted an hour after uploading."
+  },
+  "features": {
+    "title": "Key Features",
+    "feature_1": {
+      "title": "Integrity Check",
+      "description": "Advanced file verification ensures data integrity throughout the upload process with MD5, SHA1, SHA256, CRC32, and CRC32C support."
+    },
+    "feature_2": {
+      "title": "Large Files Upload",
+      "description": "Handle massive files with ease. Our chunked upload system efficiently manages files of any size while maintaining performance."
+    },
+    "feature_3": {
+      "title": "S3 Compatible Upload",
+      "description": "Seamlessly integrate with any S3-compatible storage service. Direct uploads with pre-signed URLs for enhanced security."
+    },
+    "feature_4": {
+      "title": "Simple Integration",
+      "description": "Get started fast with our uploader. Comprehensive documentation and examples for quick implementation."
+    },
+    "feature_5": {
+      "title": "Single & Bulk Upload",
+      "description": "Flexible upload options for both single files and multiple files simultaneously. Drag and drop support with progress tracking for each file."
+    },
+    "feature_6": {
+      "title": "Resumable Upload",
+      "description": "Never lose progress. Automatically resume interrupted uploads from where they left off, saving time and bandwidth."
+    }
+  },
+  "banner": {
+    "title": "Need Custom Software Development?",
+    "subtitle": "Partner with GigLabo Agency",
+    "description": "Get expert software development services from the creators of GigLabo File Uploader",
+    "cta": "Work with us",
+    "benefit_1": "Free commercial license for GigLabo File Uploader if needed",
+    "benefit_2": "Custom features and integrations",
+    "benefit_3": "Dedicated development team",
+    "benefit_4": "Maintenance & support"
+  },
+  "footer": {
+    "description": "A resumable, S3-compatible solution for handling large file uploads with integrity verification"
+  },
+  "error_404": {
+    "title": " Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+    "backToHome": "Back to Home",
+    "documentation": "Documentation"
+  },
+  "statuses": {
+    "active": "active",
+    "in_process": "in process",
+    "processed": "processed",
+    "deleted": "deleted",
+    "expired": "expired"
+  },
+  "storage": {
+    "uploaded_at": "Uploaded at ",
+    "file": "file",
+    "files_plural": "s",
+    "checksum": "Checksum: ",
+    "checksum_algorithm": "Checksum Algorithm: ",
+    "download": "Download",
+    "loading": "Loading files...",
+    "empty_storage": "Your storage is empty."
+  },
+  "ogimage": {
+    "title": "GigLabo File Uploader",
+    "subtitle": "Powerful File Uploads for Next.js Applications",
+    "feature_1": "Resumable Uploads",
+    "feature_2": "Integrity Verification",
+    "feature_3": "S3 Compatible",
+    "feature_4": "Large Files Upload"
+  },
+  "errors": {
+    "fileSizeExceeded": "Cannot add file. File size would exceed {{maxSize}} limit.",
+    "totalFilesSizeExceeded": "Cannot add files. Total size would exceed {{maxUploadSize}} limit."
+  },
+  "cookie": {
+    "text": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "why_us": {
+    "badge": "Built for Next.js",
+    "title": "Need File Uploader for Next.js?",
+    "subtitle": "Let us handle the integration!",
+    "description": "What you will get?",
+    "ps": "* Please specify that you need a File Uploader Integration for Next.js",
+    "benefit_1": {
+      "title": "Secure, resumable file uploads",
+      "description": "S3-compatibility for any size with integrity verification"
+    },
+    "benefit_2": {
+      "title": "Custom UI design",
+      "description": "Tailored to match your brand and requirements"
+    },
+    "benefit_3": {
+      "title": "Commercial license included",
+      "description": "Full commercial license with the integration service"
+    },
+    "benefit_4": {
+      "title": "2 revisions included",
+      "description": "Fine-tune the implementation to your needs"
+    },
+    "benefit_5": {
+      "title": "7 days implementation",
+      "description": "Quick turnaround time for your project"
+    },
+    "benefit_6": {
+      "title": "Fixed price",
+      "description": "Full integration for only $1500"
+    }
+  },
+  "contact": {
+    "title": "Interested in our integration service?",
+    "subtitle": "Choose how you would like to proceed:",
+    "email": "Contact Us",
+    "call": "Schedule a Call"
+  }
+}

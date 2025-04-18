@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Page",
+  "publisher": {
+    "@type": "Organisation",
+    "name": "GigLabo",
+    "logo": "<APP_BASE_URL><HOST_PUBLIC_RSS>/favicon-256x256.png"
+  },
+  "author": {
+    "@type": "Organisation",
+    "name": "GigLabo",
+    "description": "Software development agency",
+    "image": "<APP_BASE_URL><HOST_PUBLIC_RSS>/favicon-256x256.png",
+    "sameAs": ""
+  },
+  "url": "<APP_URL>",
+  "headline": "GigLabo File Uploader",
+  "description": "Resumable, Secure S3-Compatible Uploads for Large Files | Enterprise File Uploader",
+  "image": "<APP_BASE_URL><HOST_PUBLIC_RSS>/images/en-og-image.png",
+  "datePublished": "",
+  "dateModified": ""
+}

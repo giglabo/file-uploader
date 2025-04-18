@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  file-uploader-demo-nextjs:
+    image: docker-private.nexus-110512.ccwar.io/giglabo/file-uploader-nexjs-aarch64:0.0.0.0000061-284f471
+#    image: file-uploader-demo-nextjs
+    container_name: file-uploader-demo-nextjs
+    environment:
+      PORT: 3001
+      NODE_ENV: production
+
+    env_file: ./.env.docker-demonextjs
+    extra_hosts:
+#      - "dev.file-uploader.giglabo.com:${IP_ADDR_PUBLIC}"
+      - "dev.file-uploader.giglabo.com:192.168.1.150"
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./dist/apps/demo-nextjs/.next/standalone:/app/standalone
+      - ./.env.docker-demonextjs:/app/.env
+      - ./apps/demo-nextjs/migrations:/app/migrations
+      - ./apps/demo-nextjs/content:/app/content
+      - ./logs:/app/logs
+      - ./logs:/root/.npm/_logs
+
+    command:
+      -  /app/standalone/giglabo-uploading/apps/demo-nextjs/server.js

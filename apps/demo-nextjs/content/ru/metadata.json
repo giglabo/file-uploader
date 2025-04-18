@@ -1,0 +1,60 @@
+{
+  "title": "Загрузчик файлов GigLabo",
+  "metadataBase": "<APP_BASE_URL>",
+  "icons": [
+    {
+      "rel": "apple-touch-icon",
+      "url": "<HOST_PUBLIC_RSS>/apple-touch-icon.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "16x16",
+      "url": "<HOST_PUBLIC_RSS>/favicon-16x16.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "64x64",
+      "url": "<HOST_PUBLIC_RSS>/favicon-64x64.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/x-icon",
+      "sizes": "256x256",
+      "url": "<HOST_PUBLIC_RSS>/favicon.ico"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "url": "<HOST_PUBLIC_RSS>/favicon-256x256.png"
+    }
+  ],
+
+  "manifest": "<HOST_PUBLIC_RSS>/manifest.json",
+
+  "other": {
+    "msapplication-config": "<HOST_PUBLIC_RSS>/browserconfig.xml"
+  },
+  "description": "Возобновляемая, безопасная загрузка больших файлов с S3-совместимостью",
+  "openGraph": {
+    "type": "website",
+    "url": "<APP_URL>",
+    "images": "<APP_BASE_URL><HOST_PUBLIC_RSS>/images/ru-og-image.png",
+    "description": "Безопасная загрузка больших файлов с возможностью возобновления и S3-интеграцией",
+    "title": "Загрузчик файлов GigLabo",
+    "countryName": "Германия",
+    "siteName": "Загрузчик файлов GigLabo",
+    "locale": "ru-RU",
+    "alternateLocale": "en-US"
+  },
+
+  "twitter": {
+    "title": "Загрузчик файлов GigLabo",
+    "description": "Безопасная загрузка больших файлов с возможностью возобновления и S3-интеграцией",
+    "card": "summary_large_image",
+    "creator": "GigLabo",
+    "images": "<APP_BASE_URL><HOST_PUBLIC_RSS>/images/ru-og-image.png",
+    "site": "<APP_URL>"
+  }
+}

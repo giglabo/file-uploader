@@ -1,0 +1,72 @@
+{%- set navlevel = navlevel + 1 %} {% if not nav_item.children %}
+<li class="mb-1">
+  {% if navlevel == 1 %}
+  <div class="relative flex items-center p-1 font-bold {% if nav_item.active %}active{% endif %} text-slate-800">
+    <svg class="mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        style = "fill: oklch(0.646 0.222 41.116)"
+        d="M19.888 7.804a.88.88 0 0 0-.314-.328l-7.11-4.346a.889.889 0 0 0-.927 0L4.426 7.476a.88.88 0 0 0-.314.328L12 12.624l7.888-4.82Z"
+      />
+      <path
+        style="fill: white"
+        d="M4.112 7.804a.889.889 0 0 0-.112.43v7.892c0 .31.161.597.426.758l7.11 4.346c.14.085.3.13.464.13v-8.736l-7.888-4.82Z"
+      />
+      <path
+        style="fill: oklch(0.398 0.195 277.366)"
+        d="M19.888 7.804c.073.132.112.28.112.43v7.892c0 .31-.161.597-.426.758l-7.11 4.346c-.14.085-.3.13-.464.13v-8.736l7.888-4.82Z"
+      />
+    </svg>
+    <a href="{{ nav_item.url|url|fix_url }}" class="hover:cursor-pointer">{{ nav_item.title }}</a>
+  </div>
+  {% elif navlevel == 2 %}
+    <li class="mb-2 {% if nav_item.active %}active{% endif %}">
+      <a href="{{ nav_item.url|url|fix_url }}" class="flex items-center space-x-3 font-medium hover:cursor-pointer">
+        <span>{{ nav_item.title }}</span>
+      </a>
+    </li>
+  {% elif navlevel == 3 %}
+    <li class="mb-2 {% if nav_item.active %}active{% endif %}">
+      <a href="{{ nav_item.url|url|fix_url }}"  class="flex items-center space-x-3 font-normal hover:cursor-pointer">
+        <span>{{ nav_item.title }}</span>
+      </a>
+    </li>
+  {% endif %}
+</li>
+{% else %}
+<li>
+  {% if navlevel == 1 %}
+  <div class="relative flex items-center p-1 font-bold text-slate-800">
+    <svg class="mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        style = "fill: oklch(0.646 0.222 41.116)"
+        d="M19.888 7.804a.88.88 0 0 0-.314-.328l-7.11-4.346a.889.889 0 0 0-.927 0L4.426 7.476a.88.88 0 0 0-.314.328L12 12.624l7.888-4.82Z"
+      />
+      <path
+        style="fill: white"
+        d="M4.112 7.804a.889.889 0 0 0-.112.43v7.892c0 .31.161.597.426.758l7.11 4.346c.14.085.3.13.464.13v-8.736l-7.888-4.82Z"
+      />
+      <path
+        style="fill: oklch(0.398 0.195 277.366)"
+        d="M19.888 7.804c.073.132.112.28.112.43v7.892c0 .31-.161.597-.426.758l-7.11 4.346c-.14.085-.3.13-.464.13v-8.736l7.888-4.82Z"
+      />
+    </svg>
+    <span">{{ nav_item.title }}</span>
+  </div>
+  <ul class="mb-2 ml-4 pl-5 border-l border-slate-200">
+    {% for nav_item in nav_item.children %} {% include "nav.html" %} {% endfor %}
+  </ul>
+  {% elif navlevel == 2 %}
+    <li class="mb-2">
+      <div class="flex items-center font-semibold text-slate-800" >
+        <span>{{ nav_item.title }}</span>
+<!--        <svg class="ml-2 shrink-0 fill-slate-400" width="8" height="10" xmlns="http://www.w3.org/2000/svg">-->
+<!--          <path d="M1 2 2.414.586 6.828 5 2.414 9.414 1 8l3-3z" />-->
+<!--        </svg>-->
+      </div>
+    </li>
+    <ul class="mb-2 pl-5 border-l border-slate-200">
+      {% for nav_item in nav_item.children %} {% include "nav.html" %} {% endfor %}
+    </ul>
+  {% endif %}
+</li>
+{% endif %} {%- set navlevel = navlevel - 1 %}

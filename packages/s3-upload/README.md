@@ -1,11 +1,4 @@
 # s3-upload
 
-This library was generated with [Nx](https://nx.dev).
+Documentation for this library you can find on [giglabo.com](https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90)
 
-## Building
-
-Run `nx build s3-upload` to build the library.
-
-## Running unit tests
-
-Run `nx test s3-upload` to execute the unit tests via [Jest](https://jestjs.io).

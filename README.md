@@ -1,21 +1,19 @@
 # GigLabo File Uploader
 
-<p align="">
-  <a href="https://www.npmjs.com/package/@giglabo/hash-worker" style="margin-right: 10px;">
+<p>
+  <a href="https://www.npmjs.com/package/@giglabo/hash-worker">
     <img src="https://img.shields.io/npm/v/@giglabo/hash-worker?label=npm%20hash-worker&color=CB3837" alt="npm hash-worker version" />
   </a>
-  <a href="https://www.npmjs.com/package/@giglabo/react-upload" style="margin: 0 10px;">
+  <a href="https://www.npmjs.com/package/@giglabo/react-upload">
     <img src="https://img.shields.io/npm/v/@giglabo/react-upload?label=npm%20react-upload&color=61DAFB" alt="npm react-upload version" />
   </a>
-  <a href="https://www.npmjs.com/package/@giglabo/s3-upload" style="margin: 0 10px;">
+  <a href="https://www.npmjs.com/package/@giglabo/s3-upload" >
     <img src="https://img.shields.io/npm/v/@giglabo/s3-upload?label=npm%20s3-upload&color=569A31" alt="npm s3-upload version" />
   </a>
-  <a href="https://www.npmjs.com/package/@giglabo/upload-shared" style="margin-left: 10px;">
+  <a href="https://www.npmjs.com/package/@giglabo/upload-shared">
     <img src="https://img.shields.io/npm/v/@giglabo/upload-shared?label=npm%20upload-shared&color=007ACC" alt="npm upload-shared version" />
   </a>
 </p>
-
----
 
 <div>
   <h3>S3 Multipart Resumable Uploads of Large Files</h3>

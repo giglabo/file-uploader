@@ -19,7 +19,7 @@ Website: giglabo.com
 Initial License:
 
 - One-time payment: 500 EUR
-- Includes: Updates and premium support forever
+- Includes: Updates and premium support
 
 3. LICENSE GRANT
 
@@ -36,7 +36,7 @@ a non-exclusive, worldwide license to:
 
 Initial Term:
 
-- Forever from purchase date
+- Starts from purchase date
 
 5. INTELLECTUAL PROPERTY RIGHTS
 

@@ -1,11 +1,28 @@
 # GigLabo File Uploader
 
-<div align="center">
+<p align="">
+  <a href="https://www.npmjs.com/package/@giglabo/hash-worker" style="margin-right: 10px;">
+    <img src="https://img.shields.io/npm/v/@giglabo/hash-worker?label=npm%20hash-worker&color=CB3837" alt="npm hash-worker version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@giglabo/react-upload" style="margin: 0 10px;">
+    <img src="https://img.shields.io/npm/v/@giglabo/react-upload?label=npm%20react-upload&color=61DAFB" alt="npm react-upload version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@giglabo/s3-upload" style="margin: 0 10px;">
+    <img src="https://img.shields.io/npm/v/@giglabo/s3-upload?label=npm%20s3-upload&color=569A31" alt="npm s3-upload version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@giglabo/upload-shared" style="margin-left: 10px;">
+    <img src="https://img.shields.io/npm/v/@giglabo/upload-shared?label=npm%20upload-shared&color=007ACC" alt="npm upload-shared version" />
+  </a>
+</p>
+
+---
+
+<div>
   <h3>S3 Multipart Resumable Uploads of Large Files</h3>
-  <p>Fast, open-source, secure and reliable file uploads for any size projects on Next.js</p>
+  <p>Fast, open-source, secure and reliable file uploads for any size projects</p>
 
   <p>
-    <a href="https://file-uploader.giglabo.com/nextjs">View Demo</a>
+    <a href="https://file-uploader.giglabo.com/nextjs">View Demo for Next.js</a>
     ·
     <a href="https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90" target="_blank">Documentation</a>
     ·
@@ -64,17 +81,16 @@ Visit our [documentation](https://giglabo.com/el/products/file-uploader/file-upl
 - Examples and tutorials
 - Troubleshooting
 
-## Commercial License
+## License
 
 GigLabo File Uploader is available under two licenses:
 
-- **Open Source** - GPL-V3 license for personal and open-source projects
-- **Commercial** - One-time fee of €500 for business use
+- **Open Source** - GPL-V3 license for personal and open-source projects ([GPL_LICENSE](https://www.gnu.org/licenses/gpl-3.0.txt))
+- **Commercial** - One-time fee for business use ([COMMERCIAL_LICENSE](COMMERCIAL_LICENSE.txt)). You can buy it on [giglabo.com](https://giglabo.com/products/file-uploader-zgq9195flavybelvn9upuqk8)
 
 The commercial license includes:
-- First year of updates and priority support
+- Updates and priority support
 - 30-day money-back guarantee
-- Optional annual renewal at €250
 
 ## Support
 
@@ -82,14 +98,9 @@ The commercial license includes:
 - 🐛 [Issue Tracker](https://github.com/giglabo/file-uploader/issues)
 - 📧 [Email Support](mailto:main@giglabo.dev)
 
-## License
-
-- Open Source: LICENSE-GPL.txt
-- Commercial: LICENSE-COMMERCIAL.txt
-
 ---
 
-<div align="center">
+<div>
   <p>Built with ❤️ by the GigLabo team</p>
   <p>© 2025 GigLabo. All rights reserved.</p>
 </div>

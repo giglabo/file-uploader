@@ -22,7 +22,7 @@ const DEFAULT_PACKAGE_PATHS = [
 ];
 
 // License files to copy
-const LICENSE_FILES = ['LICENSE.md', 'LICENSE-COMMERCIAL.txt', 'LICENSE-GPL.txt'];
+const LICENSE_FILES = ['LICENSE.md', 'COMMERCIAL_LICENSE.txt', 'GPL_LICENSE.txt'];
 
 class PackageUpdater {
   constructor({ paths, pattern, version, licensesSourceDir }) {

@@ -19,13 +19,7 @@ Website: giglabo.com
 Initial License:
 
 - One-time payment: 500 EUR
-- Includes: First year of updates and premium support
-- Renewal Terms:
-
-Annual renewal fee:
-
-- 250 EUR (50% of initial license)
-- Includes: Continued updates and premium support
+- Includes: Updates and premium support forever
 
 3. LICENSE GRANT
 
@@ -42,15 +36,7 @@ a non-exclusive, worldwide license to:
 
 Initial Term:
 
-- One year from purchase date
-- Automatic expiration of update and support rights after one year
-- Core license remains valid perpetually
-
-Renewal:
-
-- Optional annual renewal at 250 EUR
-- Must be renewed within 30 days of expiration
-- Lapse in renewal may require new full license purchase
+- Forever from purchase date
 
 5. INTELLECTUAL PROPERTY RIGHTS
 
@@ -63,7 +49,6 @@ to Licensor's registered business entity
 
 6. REFUND POLICY
 
-- 30-Day Money Back Guarantee
 - Full refund available within 30 days of purchase
 - No questions asked policy
 - Refund excludes any custom development costs
@@ -92,7 +77,6 @@ Licensee may NOT:
 - Transfer the license to another entity
 - Remove copyright notices or attributions
 - Share access credentials or source code
-- Exceed the support hours limit
 
 9. DELIVERY AND ACCESS
 

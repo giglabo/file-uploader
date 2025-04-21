@@ -97,7 +97,6 @@ class FixUrlsPluginConfig(mkdocs.config.base.Config):
   attributes = c.Type(list, default=["href", "src", "data"])
   prefix = c.Type(str, default="site")
   absolute_url = c.Type(str, default="/")
-  absolute_url = c.Type(str, default="/")
 
 class FixUrlsPlugin(mkdocs.plugins.BasePlugin[FixUrlsPluginConfig]):
   config_scheme = (
@@ -130,12 +129,13 @@ class FixUrlsPlugin(mkdocs.plugins.BasePlugin[FixUrlsPluginConfig]):
       r"(" + "|".join(self.config["attributes"]) + r')="' + self.prefix + r':([^"]+)"',
       re.IGNORECASE,
       )
+    self.absolute_url = self.config["absolute_url"]
     self.regex_prefix_absolute = re.compile(
       r"(" + "|".join(self.config["attributes"]) + r')="' + self.prefix_absolute + r':([^"]+)"',
       re.IGNORECASE,
       )
 
-    logger.info(f"absolute_url: {self.absolute_url} prefix {self.prefix} prefix_absolute: {self.prefix_absolute}")
+    logger.info(f"absolute_url: {self.absolute_url} prefix {self.prefix}")
 
   @mkdocs.plugins.event_priority(50)
   def on_page_content(self, html, page, config, files):
@@ -207,6 +207,5 @@ class FixUrlsPlugin(mkdocs.plugins.BasePlugin[FixUrlsPluginConfig]):
 
       return f'{param}="{final_url}"'
 
-    result = self.regex.sub(_replace, html)
-    # html = self.regex_prefix_absolute.sub(_replace_absolute, html)
-    return result
+    html = self.regex.sub(_replace, html)
+    return self.regex_prefix_absolute.sub(_replace_absolute, html)

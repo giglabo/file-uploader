@@ -1,5 +1,4 @@
-// Advanced implementation code example
-export const advancedCode = `import {
+import {
   DataUploadService,
   MetaUploadService,
   UploadConfigService,
@@ -124,6 +123,3 @@ export function UploadWrapperComponent() {
     </UploadGlobalProvider>
   );
 }
-`;
-
-export const basicCode = advancedCode;

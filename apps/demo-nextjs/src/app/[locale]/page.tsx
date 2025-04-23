@@ -1,6 +1,6 @@
 import { MainComponent } from '@/components/MainComponent';
-import { Metadata, ResolvingMetadata } from 'next';
-import { createLdJson, createMetadata } from '@/app/_utils/utils';
+import { Metadata } from 'next';
+import { createLdJson } from '@/app/_utils/utils';
 import Script from 'next/script';
 import { Env } from '@/libs/Env';
 import { getMetadata } from '@/app/_utils/metadata-utils';
@@ -11,8 +11,6 @@ type PropParams = {
 };
 
 export async function generateMetadata(props: PropParams /*, parent: ResolvingMetadata*/): Promise<Metadata> {
-  // console.log('Generating metadata', parent);
-  // return createMetadata({}, parent);
   const { locale } = await props.params;
   return getMetadata(locale).then((x) => x || {});
 }

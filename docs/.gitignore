@@ -1,0 +1,15 @@
+dev-*-mkdocs.yml
+mkdocs.yml
+giglabo-file-uploader-docs/site
+*.egg-info
+.idea
+venv
+logs
+__pycache__
+*.pyc
+*.iml
+*.py.bin
+docker/dev*.yml
+version.txt
+local
+.bash_history

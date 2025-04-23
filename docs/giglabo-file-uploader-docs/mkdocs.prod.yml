@@ -1,0 +1,31 @@
+site_name: Giglabo File Uploader
+site_url: https://giglabo.com/docs/products/file-uploader
+theme:
+#  name: mkdocs
+  name: null
+  custom_dir: 'custom_theme/'
+  locale: en
+  language: en
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+
+plugins:
+  - search
+  - fix-urls:
+#      absolute_url: https://app.dev.giglabo.com/el/products/file-uploader/file-uploader-docs-rsimqi87ihd28546tvv9eog5
+      absolute_url: https://giglabo.com/el/products/file-uploader/file-uploader-docs-hmobhkpylx982fp9rem4ag90
+      prefix: relative_site
+      prefix_absolute: absolute_doc_host_site
+      attributes:
+        - href
+        - src
+        - data
+        - data-url
+#  - site-urls
+

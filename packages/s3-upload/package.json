@@ -37,8 +37,7 @@
   "dependencies": {
     "tslib": "^2.3.0",
     "@aws-sdk/s3-request-presigner": "^3.744.0",
-    "@giglabo/upload-shared": "1.0.9",
-    "verdaccio": "6.1.2"
+    "@giglabo/upload-shared": "1.0.9"
   },
   "peerDependencies": {
     "@aws-sdk/client-s3": "^3",

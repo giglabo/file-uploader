@@ -10,8 +10,8 @@ that's geared towards simplifying the upload functionality in any project.
 Start by reading the [introductory tutorial], then check the
 [User Guide] for more information.
 
-[introductory tutorial]: relative_site:getting-started.md
-[User Guide]: relative_site:user-guide/README.md
+[introductory tutorial]: relative_site:getting-started
+[User Guide]: relative_site:user-guide/
 
 <div class="text-center">
 <a href="relative_site:getting-started/" class="btn btn-primary" role="button">Getting Started</a>

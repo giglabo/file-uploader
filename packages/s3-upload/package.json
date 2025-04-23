@@ -1,6 +1,6 @@
 {
   "name": "@giglabo/s3-upload",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "commonjs",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -37,7 +37,7 @@
   "dependencies": {
     "tslib": "^2.3.0",
     "@aws-sdk/s3-request-presigner": "^3.744.0",
-    "@giglabo/upload-shared": "1.0.8",
+    "@giglabo/upload-shared": "1.0.9",
     "verdaccio": "6.1.2"
   },
   "peerDependencies": {

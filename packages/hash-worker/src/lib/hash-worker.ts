@@ -1,4 +1,11 @@
-import { Hash, HashMessageWrapper, HashOutputChunk, InputFileHashMetaData, OutputFileHash, OutputFileHashMetaData } from '@giglabo/upload-shared';
+import {
+  Hash,
+  HashMessageWrapper,
+  HashOutputChunk,
+  InputFileHashMetaData,
+  OutputFileHash,
+  OutputFileHashMetaData,
+} from '@giglabo/upload-shared';
 import { IHasher } from 'hash-wasm/dist/lib/WASMInterface';
 import { createCRC32, createMD5, createSHA1, createSHA256 } from 'hash-wasm';
 import * as df from 'date-fns';

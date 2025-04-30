@@ -1,4 +1,10 @@
-import { HashCalcProgress, HashCalculator, InputFileHashMetaData, MetaRetrieveWorker, OutputFileHashMetaData } from '@giglabo/upload-shared';
+import {
+  HashCalcProgress,
+  HashCalculator,
+  InputFileHashMetaData,
+  MetaRetrieveWorker,
+  OutputFileHashMetaData,
+} from '@giglabo/upload-shared';
 import { v4 as uuid } from 'uuid';
 
 export class NoHashCalcService extends HashCalculator {

@@ -54,8 +54,8 @@ export default async function RootLayout(props: PropsParams) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning className="h-full">
+      <body suppressHydrationWarning className="h-full">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ErrorProvider>
             <LocaleProvider locale={locale} translations={translations}>

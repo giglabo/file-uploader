@@ -3,21 +3,12 @@ import { Copy, Code, ExternalLink } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 
 interface CodeExampleProps {
-  activeTab: 'basic' | 'advanced';
-  // onTabChange: (tab: 'basic' | 'advanced') => void;
-  onCopyCode: (code: string) => void;
-  basicCode: string;
-  advancedCode: string;
   documentationUrl: string;
+  exampleOneUrl : string;
 }
 
 const CodeExampleComponent: React.FC<CodeExampleProps> = ({
-  activeTab,
- /* onTabChange,*/
-  onCopyCode,
-  basicCode,
-  advancedCode,
-  documentationUrl,
+  documentationUrl, exampleOneUrl
 }) => {
   const { t } = useTranslation();
   return (
@@ -27,42 +18,20 @@ const CodeExampleComponent: React.FC<CodeExampleProps> = ({
       </div>
 
       <div className="p-6">
-        {/* Tabs */}
-        {/*<div className="mb-4 flex border-b border-gray-200">*/}
-        {/*  <button*/}
-        {/*    onClick={() => onTabChange('basic')}*/}
-        {/*    className={`px-5 py-2.5 text-base font-medium ${*/}
-        {/*      activeTab === 'basic' ? 'border-b-2 border-orange-500 text-orange-600' : 'text-gray-600 hover:text-gray-800'*/}
-        {/*    }`}*/}
-        {/*  >*/}
-        {/*    {t('live.basic')}*/}
-        {/*  </button>*/}
-        {/*  <button*/}
-        {/*    onClick={() => onTabChange('advanced')}*/}
-        {/*    className={`px-5 py-2.5 text-base font-medium ${*/}
-        {/*      activeTab === 'advanced' ? 'border-b-2 border-orange-500 text-orange-600' : 'text-gray-600 hover:text-gray-800'*/}
-        {/*    }`}*/}
-        {/*  >*/}
-        {/*    {t('live.advanced')}*/}
-        {/*  </button>*/}
-        {/*</div>*/}
 
-        {/* Code Block */}
-        <div className="relative">
-          <pre className="overflow-x-auto rounded-lg bg-gray-900 p-4 text-sm text-gray-100">
-            <code>{activeTab === 'basic' ? basicCode : advancedCode}</code>
-          </pre>
-          <button
-            onClick={() => onCopyCode(activeTab === 'basic' ? basicCode : advancedCode)}
-            className="absolute right-2 top-2 rounded bg-gray-700 p-1.5 text-gray-200 transition-colors hover:bg-gray-600"
-            title="Copy code"
+        {/* Example Link */}
+        <div className="mt-4">
+          <a
+            href={exampleOneUrl}
+            className="inline-flex items-center font-medium text-orange-600 hover:text-orange-700" rel="noreferrer"
           >
-            <Copy className="h-4 w-4" />
-          </button>
+            <Code className="mr-1 h-4 w-4" />
+            {t('live.seeExampleOneDemo')}
+          </a>
         </div>
 
         {/* Documentation Link */}
-        <div className="mt-4 text-center">
+        <div className="mt-4">
           <a
             href={documentationUrl}
             target={'_blank'}

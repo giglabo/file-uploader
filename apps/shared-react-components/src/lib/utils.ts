@@ -20,3 +20,19 @@ export const formatFileSize = (bytes: number): string => {
 export const formatDate = (dateString: string) => {
   return format(new Date(dateString), 'dd.MM.yyyy HH:mm:ss');
 };
+
+export const getLanguageFromFileName = (fileName: string): string => {
+  const extension = fileName.split('.').pop()?.toLowerCase() || '';
+  const extensionMap: Record<string, string> = {
+    'js': 'javascript',
+    'jsx': 'javascript',
+    'ts': 'typescript',
+    'tsx': 'typescript',
+    'css': 'css',
+    'html': 'xml',
+    'json': 'json',
+    'md': 'markdown',
+  };
+
+  return extensionMap[extension] || 'typescript';
+};

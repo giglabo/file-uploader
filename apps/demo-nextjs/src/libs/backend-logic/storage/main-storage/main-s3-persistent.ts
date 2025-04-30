@@ -192,8 +192,8 @@ export class S3MainPersistence extends BasePersist {
 
       const dbItem = await queryRunner.manager.findOneBy(UploadFileEntityDb, { uploadFileUid: fileId, uploadUid: uploadId });
 
-      await queryRunner.commitTransaction();
       if (dbItem) {
+        await queryRunner.commitTransaction();
         return this.convertDbFile(dbItem);
       }
       return undefined;

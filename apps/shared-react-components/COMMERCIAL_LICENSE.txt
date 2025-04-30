@@ -1,0 +1,160 @@
+COMMERCIAL SOFTWARE LICENSE AGREEMENT
+Last Updated: 01.04.2025
+
+1. LICENSE OVERVIEW
+
+This Commercial License Agreement (the "Agreement") is between Alena Esakova,
+operating as GigLabo ("Licensor"), currently operating as an individual entrepreneur
+in accordance with German law, and the purchasing entity ("Licensee") for the GigLabo File
+Uploader software ("Software").
+
+Licensor Contact Information:
+
+Contact: main@giglabo.com
+Address: Munich, Germany
+Website: giglabo.com
+
+2. PRICING AND TERMS
+
+Initial License:
+
+- One-time payment: 500 EUR
+- Includes: Updates and premium support
+
+3. LICENSE GRANT
+
+Subject to the payment of the applicable license fees, Licensor grants Licensee
+a non-exclusive, worldwide license to:
+
+- Use the Software in commercial products and services
+- Modify the Software for Licensee's own use
+- Create derivative works
+- Deploy on unlimited servers/instances owned by Licensee
+- Include in Licensee's commercial applications
+
+4. TERM AND TERMINATION
+
+Initial Term:
+
+- Starts from purchase date
+
+5. INTELLECTUAL PROPERTY RIGHTS
+
+Licensor retains all intellectual property rights to the Software
+Licensee receives only the rights explicitly granted in this Agreement
+All modifications and derivative works created by Licensee remain the property of Licensee,
+but do not affect Licensor's ownership of the original Software
+Upon formal business registration, all intellectual property rights will transfer
+to Licensor's registered business entity
+
+6. REFUND POLICY
+
+- Full refund available within 30 days of purchase
+- No questions asked policy
+- Refund excludes any custom development costs
+
+7. SUPPORT AND UPDATES
+
+Premium Support Includes:
+
+- Email support
+- Bug fixes and priority attention
+- Implementation guidance
+- Direct access to development team
+
+Updates Include:
+
+- All new versions and features
+- Security updates
+- Performance improvements
+- Documentation updates
+
+8. RESTRICTIONS
+
+Licensee may NOT:
+
+- Redistribute the Software as a standalone product
+- Transfer the license to another entity
+- Remove copyright notices or attributions
+- Share access credentials or source code
+
+9. DELIVERY AND ACCESS
+
+Upon payment, Licensee will receive:
+
+- Invoice
+- License certificate
+- Direct support contact information
+
+10. ACCEPTABLE USE
+
+This license permits use in:
+
+- Commercial websites
+- SaaS applications
+- Enterprise software
+- Commercial products
+
+11. TERMINATION GROUNDS
+
+License may be terminated for:
+
+- Payment failure
+- License terms violation
+- Unauthorized sharing
+- Exceeding support limits
+
+12. CUSTOM MODIFICATIONS
+
+Custom development available at:
+
+- Standard rate: 80 EUR/hour
+- Separate from support hours
+- If you use our GigLabo agency's services for custom development and your project
+requires file uploading, then the license for this file uploader and customization
+is included in the price of our services.
+
+13. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL LICENSOR BE LIABLE
+FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING,
+WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF
+BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY
+TO USE THE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+IN ANY CASE, LICENSOR'S ENTIRE LIABILITY UNDER ANY PROVISION OF THIS AGREEMENT SHALL BE LIMITED
+TO THE AMOUNT ACTUALLY PAID BY LICENSEE FOR THE SOFTWARE.
+
+14. WARRANTY DISCLAIMER
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT. LICENSOR DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE
+WILL MEET LICENSEE'S REQUIREMENTS OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE.
+
+15. FUTURE BUSINESS TRANSITION
+
+Upon formal business registration, all rights and obligations under this Agreement
+will automatically transfer to the registered business entity that will operate as GigLabo.
+Licensee will be notified of such registration and provided with updated business
+information. This transition will not affect the validity of this Agreement.
+
+16. ASSIGNMENT
+
+Licensee may not assign or transfer this Agreement or any rights granted hereunder
+without the prior written consent of Licensor. Any attempted assignment without
+such consent shall be void. Licensor may assign this Agreement in connection with a
+merger, acquisition, or sale of all or substantially all of its assets.
+
+17. RIGHT OF WITHDRAWAL (FOR CONSUMERS ONLY)
+
+Licensee has the right to withdraw from this Agreement within 30 days without giving
+any reason. The withdrawal period will expire after 30 days from the day of the conclusion
+of the contract. To exercise the right of withdrawal, Licensee must inform Licensor of their
+decision to withdraw from this contract by an unequivocal statement (e.g., a letter sent by
+post or email). This right of withdrawal is separate from and in addition to the refund policy
+in Section 6.
+
+18. EXPORT COMPLIANCE
+
+By purchasing the license, Licensee acknowledges that they have read this Agreement,
+understand it, and agree to be bound by its terms and conditions.

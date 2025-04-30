@@ -14,7 +14,6 @@ import { HashingService } from '@giglabo/hash-worker';
 import { NextJsMetaUploadService } from '@/app/[locale]/_upload-providers/NextJsMetaUploadService';
 import { NextJsUploadConfigService } from '@/app/[locale]/_upload-providers/NextJsUploadConfigService';
 import { NextJsDataUploadService } from '@/app/[locale]/_upload-providers/NextJsDataUploadService';
-import { advancedCode, basicCode } from '@/app/_constants';
 import { useEffect, useState } from 'react';
 import { Hash, urlJoin } from '@giglabo/upload-shared';
 import { useError } from '@/providers/ErrorProvider';
@@ -28,9 +27,10 @@ const LS_COOKIE_KEY = 'cookies_hidden';
 interface MainComponentProps {
   githubUrl: string;
   documentationUrl: string;
+  exampleOneUrl: string;
 }
 
-export function MainComponent({ githubUrl, documentationUrl }: MainComponentProps) {
+export function MainComponent({ githubUrl, documentationUrl, exampleOneUrl }: MainComponentProps) {
   useEffect(() => {
     create().then();
   }, []);
@@ -94,13 +94,12 @@ export function MainComponent({ githubUrl, documentationUrl }: MainComponentProp
         >
           <DemoLiveComponent
             apiUrl={Env.NEXT_PUBLIC_BASE_URL || '/'}
-            basicCode={basicCode}
-            advancedCode={advancedCode}
             hashingAlgo={hashingAlgo}
             chunkHashingAlgo={chunkHashingAlgo}
             maxFileSize={fileMaxSize}
             maxUploadSize={maxUploadSize}
             documentationUrl={documentationUrl}
+            exampleOneUrl={exampleOneUrl}
             onHashingAlgoChange={handleHashingAlgoChange}
             onHandleGlobalError={handleError}
           />

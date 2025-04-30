@@ -90,8 +90,9 @@ async function completeFile(req: NextRequest, rootUserUid: string, uploadId: str
         );
 
         await updateUploadFile(uploadedFile, { downloadUrl: presignedUrlResponse });
+        return NextResponse.json({}, { status: 200 });
       }
-      return NextResponse.json({}, { status: 200 });
+      return NextResponse.json({ error: 'Upload failed' }, { status: 500 });
     } catch (e) {
       logger.error(e, 'Upload failed');
       return NextResponse.json({ error: 'Upload failed' }, { status: 500 });

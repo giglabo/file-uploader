@@ -30,29 +30,27 @@
 
 ```bash
 # Install via npm
-npm install @giglabo/file-uploader
+npm i @giglabo/hash-worker
+
+npm i @giglabo/react-upload
+
+npm i @giglabo/s3-upload
+
+npm i @giglabo/upload-shared
 
 # Or using yarn
-yarn add @giglabo/file-uploader
+yarn add @giglabo/hash-worker
+
+yarn add @giglabo/react-upload
+
+yarn add @giglabo/s3-upload
+
+yarn add @giglabo/upload-shared
 ```
 
 ### Basic Usage
 
-```typescript
-import { FileUploader } from '@giglabo/file-uploader';
-
-const uploader = new FileUploader({
-  endpoint: 'https://your-api.com/upload',
-  chunkSize: 5 * 1024 * 1024, // 5MB chunks
-  verifyIntegrity: true
-});
-
-uploader.on('progress', (progress) => {
-  console.log(`Upload progress: ${progress}%`);
-});
-
-uploader.upload(files);
-```
+Example of the implementation you can see on [GigLabo File Uploader Live Demo Page](https://file-uploader.giglabo.com/nextjs) (Code Tab)
 
 ## Why GigLabo File Uploader?
 

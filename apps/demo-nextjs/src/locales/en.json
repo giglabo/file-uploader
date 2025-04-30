@@ -38,8 +38,10 @@
     "basic": "Basic",
     "advanced": "Advanced",
     "seeDocumentation": "See full documentation",
+    "seeExampleOneDemo": "See demo for example №1",
     "uploadTab": "Upload Files",
     "storageTab": "Storage",
+    "codeTab": "Code Example",
     "noFiles": "No files in storage",
     "warning": "It's a demo!  Files are not permanently stored and automatically deleted an hour after uploading."
   },

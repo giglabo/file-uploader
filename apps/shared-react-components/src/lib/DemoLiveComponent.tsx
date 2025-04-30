@@ -18,7 +18,6 @@ type DemoLiveProps = {
   chunkHashingAlgo: HashType;
   maxFileSize: number;
   maxUploadSize: number;
-  documentationUrl: string;
   exampleOneUrl: string;
   onHashingAlgoChange: (newHashingAlgo: Hash | 'custom', newChunkHashingAlgo: Hash | 'custom') => void;
   onHandleGlobalError: (message: string) => void;
@@ -30,7 +29,6 @@ export function DemoLiveComponent({
   chunkHashingAlgo,
   maxFileSize,
   maxUploadSize,
-  documentationUrl,
   exampleOneUrl,
   onHashingAlgoChange,
   onHandleGlobalError,
@@ -190,8 +188,7 @@ export function DemoLiveComponent({
 
         <section className="space-y-8">
           {activeDemoTab === 'upload' && (
-            <>
-              <DemoControlsComponent
+            <DemoControlsComponent
                 chunkChecksumAlgorithm={selectedChunkHashingAlgo}
                 fileChecksumAlgorithm={selectedHashingAlgo}
                 showChunkInfoPopup={showChunkInfoPopup}
@@ -201,8 +198,6 @@ export function DemoLiveComponent({
                 onToggleChunkInfo={() => setShowChunkInfoPopup(!showChunkInfoPopup)}
                 onToggleFileInfo={() => setShowFileInfoPopup(!showFileInfoPopup)}
               />
-              {/*<CodeExampleComponent documentationUrl={documentationUrl} exampleOneUrl={exampleOneUrl} />*/}
-            </>
           )}
         </section>
       </div>

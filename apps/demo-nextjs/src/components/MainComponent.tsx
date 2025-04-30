@@ -98,7 +98,6 @@ export function MainComponent({ githubUrl, documentationUrl, exampleOneUrl }: Ma
             chunkHashingAlgo={chunkHashingAlgo}
             maxFileSize={fileMaxSize}
             maxUploadSize={maxUploadSize}
-            documentationUrl={documentationUrl}
             exampleOneUrl={exampleOneUrl}
             onHashingAlgoChange={handleHashingAlgoChange}
             onHandleGlobalError={handleError}

@@ -21,7 +21,6 @@ import { Env } from '@/libs/Env';
 import { create } from '@/app/[locale]/_actions';
 import CookieConsent from '@/components/CookieConsent';
 
-type IpResponse = { status: 'OK' | 'FAIL'; ip?: { isEu: boolean } };
 const LS_COOKIE_KEY = 'cookies_hidden';
 
 interface MainComponentProps {
@@ -46,18 +45,31 @@ export function MainComponent({ githubUrl, documentationUrl, exampleOneUrl }: Ma
   const maxUploadSize = parseInt(Env.MAX_UPLOAD_SIZE, 10) * 1024 * 1024;
 
   useEffect(() => {
-    const value = localStorage.getItem(LS_COOKIE_KEY) === 'true';
-    if (!value) {
-      fetch(urlJoin(Env.NEXT_PUBLIC_BASE_URL || '', '/api/ip'))
-        .then((response) => response.json())
-        .catch((error) => handleError(error))
-        .then((data: IpResponse) => {
-          if (data.ip?.isEu) {
+    const cookieConsentGiven = localStorage.getItem(LS_COOKIE_KEY) === 'true';
+
+    let isMounted = true;
+    if (!cookieConsentGiven) {
+      const checkEuLocation = async () => {
+        try {
+          const apiUrl = urlJoin(Env.NEXT_PUBLIC_BASE_URL || '', '/api/ip');
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+
+          if (isMounted && data?.ip?.isEu) {
             setShowCookieConsent(true);
           }
-        })
-        .catch((error) => handleError(error));
+        } catch (error: any) {
+          if (isMounted) {
+            handleError(error.toString());
+          }
+        }
+      };
+
+      checkEuLocation().then();
     }
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const { showError } = useError();

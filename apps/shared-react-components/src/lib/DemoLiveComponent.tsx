@@ -6,7 +6,6 @@ import { v4 as uuid } from 'uuid';
 import { FileItem } from './_models';
 import { SelectedFilesComponent } from './SelectedFilesComponent';
 import DemoControlsComponent from './DemoControlsComponent';
-import CodeExampleComponent from './CodeExampleComponent';
 import { Hash, HashType } from '@giglabo/upload-shared';
 import StorageTab from './StorageTab';
 import { formatFileSize } from './utils';
@@ -51,6 +50,40 @@ export function DemoLiveComponent({
     setSelectedHashingAlgo(hashingAlgo);
     setSelectedChunkHashingAlgo(chunkHashingAlgo);
   }, [hashingAlgo, chunkHashingAlgo]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'storage') {
+        setActiveDemoTab('storage');
+      } else if (hash === 'code') {
+        setActiveDemoTab('code');
+      } else if (hash === 'upload' || hash === '') {
+        setActiveDemoTab('upload');
+      }
+      const handleHashChange = () => {
+        const newHash = window.location.hash.replace('#', '');
+        if (newHash === 'storage') {
+          setActiveDemoTab('storage');
+        } else if (newHash === 'code') {
+          setActiveDemoTab('code');
+        } else if (newHash === 'upload' || newHash === '') {
+          setActiveDemoTab('upload');
+        }
+      };
+      window.addEventListener('hashchange', handleHashChange);
+      return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+      };
+    }
+    return undefined;
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.location.hash = activeDemoTab;
+    }
+  }, [activeDemoTab]);
 
   const handleFileSelect = (selectedFiles: FileList | null) => {
     if (!selectedFiles) return;
@@ -114,6 +147,13 @@ export function DemoLiveComponent({
     onHandleGlobalError(message);
   };
 
+  const handleTabChange = (tab: 'upload' | 'storage' | 'code') => {
+    setActiveDemoTab(tab);
+    if (tab === 'upload') {
+      handleUploadMoreFiles();
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-16 max-md:py-12">
       <h2 className="mb-8 text-center text-4xl font-bold">
@@ -135,10 +175,7 @@ export function DemoLiveComponent({
 
       <div className="mb-8 flex border-b border-gray-200">
         <button
-          onClick={() => {
-            handleUploadMoreFiles();
-            setActiveDemoTab('upload');
-          }}
+          onClick={() => handleTabChange('upload')}
           className={`border-b-2 px-8 py-4 text-lg font-medium transition-colors ${
             activeDemoTab === 'upload' ? 'border-orange-500 text-orange-600' : 'border-transparent text-gray-500 hover:text-gray-700'
           }`}
@@ -146,7 +183,7 @@ export function DemoLiveComponent({
           {t('live.uploadTab')}
         </button>
         <button
-          onClick={() => setActiveDemoTab('storage')}
+          onClick={() => handleTabChange('storage')}
           className={`border-b-2 px-8 py-4 text-lg font-medium transition-colors ${
             activeDemoTab === 'storage' ? 'border-orange-500 text-orange-600' : 'border-transparent text-gray-500 hover:text-gray-700'
           }`}
@@ -154,7 +191,7 @@ export function DemoLiveComponent({
           {t('live.storageTab')}
         </button>
         <button
-          onClick={() => setActiveDemoTab('code')}
+          onClick={() => handleTabChange('code')}
           className={`border-b-2 px-8 py-4 text-lg font-medium transition-colors ${
             activeDemoTab === 'code' ? 'border-orange-500 text-orange-600' : 'border-transparent text-gray-500 hover:text-gray-700'
           }`}

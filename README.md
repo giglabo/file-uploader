@@ -25,6 +25,8 @@
 - 📦 **S3 Compatible** - Works with any S3-compatible storage
 - 🔒 **Secure by Default** - Built with security best practices
 - 📹 **Big Files Upload** - Handle gigabyte files with ease 
+- 🎨 **Customizable UI** - Adapt to match your brand and product
+- 🛠️ **Any backend stack** - Backend-Agnostic Integration
 
 ## Quick Start
 
@@ -50,7 +52,7 @@ yarn add @giglabo/upload-shared
 
 ### Basic Usage
 
-Example of the implementation you can see on [GigLabo File Uploader Live Demo Page](https://file-uploader.giglabo.com/nextjs) (Code Tab)
+Example of the implementation you can see on [GigLabo File Uploader Live Demo Page](https://file-uploader.giglabo.com/nextjs/en/#code) (Code Tab)
 
 ## Why GigLabo File Uploader?
 
@@ -69,14 +71,19 @@ Visit our [documentation](https://giglabo.com/el/products/file-uploader/file-upl
 
 ## License
 
-GigLabo File Uploader is available under two licenses:
+This project is released under the GNU General Public License v3.0 (GPLv3).
 
-- **Open Source** - GPL-V3 license for personal and open-source projects ([GPL_LICENSE](https://www.gnu.org/licenses/gpl-3.0.txt))
-- **Commercial** - One-time fee for business use ([COMMERCIAL_LICENSE](COMMERCIAL_LICENSE.txt)). You can buy it on [giglabo.com](https://giglabo.com/products/file-uploader-zgq9195flavybelvn9upuqk8)
+You are free to use, modify, and distribute this software under the terms of the GPLv3. However, **if you wish to use this software in a proprietary or commercial product without disclosing your own source code**, you must purchase a **commercial license**.
 
-The commercial license includes:
-- Updates and priority support
-- 30-day money-back guarantee
+### ✅ GPLv3 License (Free, Open Source Use)
+- Use it for personal projects
+- Use it for open-source applications
+- Modify it freely, as long as you comply with the GPLv3
+
+### 💼 Commercial Use
+To use this uploader in a commercial or proprietary product, please purchase a [commercial license](COMMERCIAL_LICENSE.txt).
+
+This helps us maintain and improve the project while ensuring fair use.
 
 ## Support
 

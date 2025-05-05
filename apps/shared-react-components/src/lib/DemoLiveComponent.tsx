@@ -1,7 +1,7 @@
 'use client';
 import { useTranslation } from '../hooks/useTranslation';
 import { DemoDragAndDropComponent } from './DemoDragAndDropComponent';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { FileItem } from './_models';
 import { SelectedFilesComponent } from './SelectedFilesComponent';
@@ -9,7 +9,8 @@ import DemoControlsComponent from './DemoControlsComponent';
 import { Hash, HashType } from '@giglabo/upload-shared';
 import StorageTab from './StorageTab';
 import { formatFileSize } from './utils';
-import CodeTab from "./CodeTab";
+import CodeTab from './CodeTab';
+import { useURLFragment } from '../hooks/useURLFragment';
 
 type DemoLiveProps = {
   apiUrl: string;
@@ -40,7 +41,8 @@ export function DemoLiveComponent({
   const [selectedChunkHashingAlgo, setSelectedChunkHashingAlgo] = useState(chunkHashingAlgo);
   const [showChunkInfoPopup, setShowChunkInfoPopup] = useState(false);
   const [showFileInfoPopup, setShowFileInfoPopup] = useState(false);
-  const [activeDemoTab, setActiveDemoTab] = useState<'upload' | 'storage' | 'code'>('upload');
+  const [urlFragment, updateUrlFragment] = useURLFragment();
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
     onHashingAlgoChange(selectedHashingAlgo, selectedChunkHashingAlgo);
@@ -51,39 +53,18 @@ export function DemoLiveComponent({
     setSelectedChunkHashingAlgo(chunkHashingAlgo);
   }, [hashingAlgo, chunkHashingAlgo]);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const hash = window.location.hash.replace('#', '');
-      if (hash === 'storage') {
-        setActiveDemoTab('storage');
-      } else if (hash === 'code') {
-        setActiveDemoTab('code');
-      } else if (hash === 'upload' || hash === '') {
-        setActiveDemoTab('upload');
-      }
-      const handleHashChange = () => {
-        const newHash = window.location.hash.replace('#', '');
-        if (newHash === 'storage') {
-          setActiveDemoTab('storage');
-        } else if (newHash === 'code') {
-          setActiveDemoTab('code');
-        } else if (newHash === 'upload' || newHash === '') {
-          setActiveDemoTab('upload');
-        }
-      };
-      window.addEventListener('hashchange', handleHashChange);
-      return () => {
-        window.removeEventListener('hashchange', handleHashChange);
-      };
+  const activeDemoTab = useMemo(() => {
+    if (urlFragment === 'code' || urlFragment === 'storage') {
+      return urlFragment;
     }
-    return undefined;
-  }, []);
+    return 'upload';
+  }, [urlFragment]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.location.hash = activeDemoTab;
+    if (!isInitialized && urlFragment !== '') {
+      setIsInitialized(true);
     }
-  }, [activeDemoTab]);
+  }, [urlFragment, isInitialized]);
 
   const handleFileSelect = (selectedFiles: FileList | null) => {
     if (!selectedFiles) return;
@@ -148,7 +129,9 @@ export function DemoLiveComponent({
   };
 
   const handleTabChange = (tab: 'upload' | 'storage' | 'code') => {
-    setActiveDemoTab(tab);
+    if (tab !== activeDemoTab) {
+      updateUrlFragment(tab);
+    }
     if (tab === 'upload') {
       handleUploadMoreFiles();
     }
@@ -226,20 +209,20 @@ export function DemoLiveComponent({
         <section className="space-y-8">
           {activeDemoTab === 'upload' && (
             <DemoControlsComponent
-                chunkChecksumAlgorithm={selectedChunkHashingAlgo}
-                fileChecksumAlgorithm={selectedHashingAlgo}
-                showChunkInfoPopup={showChunkInfoPopup}
-                showFileInfoPopup={showFileInfoPopup}
-                onChunkChecksumChange={handleChunkChecksumChange}
-                onFileChecksumChange={handleFileChecksumChange}
-                onToggleChunkInfo={() => setShowChunkInfoPopup(!showChunkInfoPopup)}
-                onToggleFileInfo={() => setShowFileInfoPopup(!showFileInfoPopup)}
-              />
+              chunkChecksumAlgorithm={selectedChunkHashingAlgo}
+              fileChecksumAlgorithm={selectedHashingAlgo}
+              showChunkInfoPopup={showChunkInfoPopup}
+              showFileInfoPopup={showFileInfoPopup}
+              onChunkChecksumChange={handleChunkChecksumChange}
+              onFileChecksumChange={handleFileChecksumChange}
+              onToggleChunkInfo={() => setShowChunkInfoPopup(!showChunkInfoPopup)}
+              onToggleFileInfo={() => setShowFileInfoPopup(!showFileInfoPopup)}
+            />
           )}
         </section>
       </div>
       {activeDemoTab === 'storage' && <StorageTab apiUrl={apiUrl} onHandleError={handleError} />}
-      {activeDemoTab === 'code' && <CodeTab exampleOneUrl={exampleOneUrl}/>}
+      {activeDemoTab === 'code' && <CodeTab exampleOneUrl={exampleOneUrl} />}
     </div>
   );
 }

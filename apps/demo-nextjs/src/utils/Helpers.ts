@@ -16,9 +16,10 @@ export const getBaseUrl = () => {
 
 export const determineIp = (request: Request): string | null | undefined => {
   return (
+    request.headers?.get('cf-connecting-ip') || // cloudflare
     request.headers?.get('x-real-ip') || // nginx
     request.headers?.get('x-client-ip') || // apache
-    request.headers?.get('x-forwarded-for') || // use this only if you trust the header
+    request.headers?.get('x-forwarded-for')?.toString() || // use this only if you trust the header
     undefined
   );
 };

@@ -16,7 +16,9 @@ export const useURLFragment = (): [string, (newFragment: string) => void] => {
         window.removeEventListener('hashchange', handleHashChange);
       };
     }
-    return () => {};
+    return () => {
+      // TODO
+    };
   }, []);
 
   const updateFragment = (newFragment: string): void => {

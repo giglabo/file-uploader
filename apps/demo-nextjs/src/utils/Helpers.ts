@@ -14,12 +14,6 @@ export const getBaseUrl = () => {
   return `http://localhost:${process.env.PORT}`;
 };
 
-export const determineIp = (request: Request): string | null | undefined => {
-  return (
-    request.headers?.get('cf-connecting-ip') || // cloudflare
-    request.headers?.get('x-real-ip') || // nginx
-    request.headers?.get('x-client-ip') || // apache
-    request.headers?.get('x-forwarded-for')?.toString() || // use this only if you trust the header
-    undefined
-  );
-};
+// Client IP resolution (CF-Connecting-IP > first X-Forwarded-For > X-Real-IP > socket,
+// configurable via CLIENT_IP_HEADERS) lives in ./ClientIp.
+export { determineIp } from './ClientIp';

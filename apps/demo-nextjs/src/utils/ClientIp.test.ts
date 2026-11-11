@@ -43,14 +43,30 @@ describe('ClientIp', () => {
       expect(determineIp(r)).toBe(VISITOR);
     });
 
-    it('falls back to x-real-ip, then the socket address', () => {
+    it('uses the default order cf-connecting-ip > x-forwarded-for > x-real-ip when CLIENT_IP_HEADERS is unset', () => {
+      const all = { 'CF-Connecting-IP': VISITOR, 'X-Forwarded-For': `198.51.100.1, ${CF_EDGE}`, 'X-Real-IP': CF_EDGE };
+
+      expect(determineIp(req(all))).toBe(VISITOR);
+      expect(determineIp(req({ 'X-Forwarded-For': all['X-Forwarded-For'], 'X-Real-IP': CF_EDGE }))).toBe('198.51.100.1');
       expect(determineIp(req({ 'X-Real-IP': CF_EDGE }, '10.42.0.5'))).toBe(CF_EDGE);
+    });
+
+    it.each(['', '   ', ' , ,'])('treats CLIENT_IP_HEADERS=%j as the default order', (value) => {
+      process.env.CLIENT_IP_HEADERS = value;
+      const r = req({ 'CF-Connecting-IP': VISITOR, 'X-Forwarded-For': `198.51.100.1, ${CF_EDGE}`, 'X-Real-IP': CF_EDGE });
+
+      expect(determineIp(r)).toBe(VISITOR);
+      expect(determineIp(req({ 'X-Real-IP': CF_EDGE }))).toBe(CF_EDGE);
+    });
+
+    it('falls back to the socket address', () => {
+      expect(determineIp(req({}, '10.42.0.5'))).toBe('10.42.0.5');
       expect(determineIp(req({}, '::ffff:10.42.0.5'))).toBe('10.42.0.5');
       expect(determineIp(req({}))).toBeUndefined();
       expect(determineIp(undefined)).toBeUndefined();
     });
 
-    it('skips empty, "unknown" and garbage values', () => {
+    it('skips invalid values (empty, "unknown", garbage) and tries the next source', () => {
       const r = req(
         {
           'CF-Connecting-IP': '  ',
@@ -83,7 +99,7 @@ describe('ClientIp', () => {
       ).toBe(VISITOR);
     });
 
-    it('honours the CLIENT_IP_HEADERS override', () => {
+    it('uses a custom order from the CLIENT_IP_HEADERS env var', () => {
       const r = req({ 'CF-Connecting-IP': VISITOR, 'X-Real-IP': CF_EDGE, 'X-Custom-IP': '198.51.100.9, 10.0.0.1' });
 
       process.env.CLIENT_IP_HEADERS = 'X-Real-IP, cf-connecting-ip';
